@@ -1,0 +1,18 @@
+{
+  "name": "rtsmunity-public-api-sdk",
+  "version": "0.0.1",
+  "description": "RTS munity REST API SDK",
+  "license": "Apache-2.0",
+  "main": "./index.js",
+  "scripts": {
+    "test": "./node_modules/mocha/bin/mocha --recursive"
+  },
+  "dependencies": {
+    "superagent": "esumin/superagent#passphrase-for-client-key"
+  },
+  "devDependencies": {
+    "mocha": "~2.3.4",
+    "sinon": "1.17.3",
+    "expect.js": "~0.3.1"
+  }
+}
