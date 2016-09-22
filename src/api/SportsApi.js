@@ -42,7 +42,7 @@
   /**
    * Sports service.
    * @module api/SportsApi
-   * @version 3.0.0
+   * @version 1.0.0
    */
 
   /**
@@ -68,7 +68,7 @@
      * List All Sports
      * 
      * @param {module:api/SportsApi~getSportsCallback} callback The callback function, accepting three arguments: error, data, response
-     * data is of type: {Array.<module:model/InlineResponse200>}
+     * data is of type: {@link Array.<module:model/InlineResponse200>}
      */
     this.getSports = function(callback) {
       var postBody = null;

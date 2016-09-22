@@ -45,7 +45,7 @@
   /**
    * The InlineResponse2005 model module.
    * @module model/InlineResponse2005
-   * @version 3.0.0
+   * @version 1.0.0
    */
 
   /**

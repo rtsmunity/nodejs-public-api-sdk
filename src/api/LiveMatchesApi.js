@@ -42,7 +42,7 @@
   /**
    * LiveMatches service.
    * @module api/LiveMatchesApi
-   * @version 3.0.0
+   * @version 1.0.0
    */
 
   /**
@@ -72,7 +72,7 @@
      * @param {Object} opts Optional parameters
      * @param {Number} opts.sequence Sequence number for filtering states
      * @param {module:api/LiveMatchesApi~getMatchFeedCallback} callback The callback function, accepting three arguments: error, data, response
-     * data is of type: {module:model/InlineResponse2003}
+     * data is of type: {@link module:model/InlineResponse2003}
      */
     this.getMatchFeed = function(id, sport, opts, callback) {
       opts = opts || {};
@@ -130,7 +130,7 @@
      * @param {Number} opts.sequence Sequence number for filtering
      * @param {String} opts.expand Expand match detail
      * @param {module:api/LiveMatchesApi~getMatchStateCallback} callback The callback function, accepting three arguments: error, data, response
-     * data is of type: {module:model/InlineResponse2004}
+     * data is of type: {@link module:model/InlineResponse2004}
      */
     this.getMatchState = function(id, sport, opts, callback) {
       opts = opts || {};
@@ -289,7 +289,7 @@
      * @param {Number} opts.tournamentId ID of the tournament in the form of an integer
      * @param {Number} opts.seriesId ID of the series in the form of an integer
      * @param {module:api/LiveMatchesApi~getMatchesCallback} callback The callback function, accepting three arguments: error, data, response
-     * data is of type: {Array.<module:model/InlineResponse2002>}
+     * data is of type: {@link Array.<module:model/InlineResponse2002>}
      */
     this.getMatches = function(sport, opts, callback) {
       opts = opts || {};

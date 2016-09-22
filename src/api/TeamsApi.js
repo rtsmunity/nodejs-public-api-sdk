@@ -42,7 +42,7 @@
   /**
    * Teams service.
    * @module api/TeamsApi
-   * @version 3.0.0
+   * @version 1.0.0
    */
 
   /**
@@ -69,7 +69,7 @@
      * 
      * @param {String} sport Sport key
      * @param {module:api/TeamsApi~getTeamsCallback} callback The callback function, accepting three arguments: error, data, response
-     * data is of type: {Array.<module:model/InlineResponse20018>}
+     * data is of type: {@link Array.<module:model/InlineResponse20018>}
      */
     this.getTeams = function(sport, callback) {
       var postBody = null;

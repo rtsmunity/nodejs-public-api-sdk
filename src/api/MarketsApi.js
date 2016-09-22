@@ -42,7 +42,7 @@
   /**
    * Markets service.
    * @module api/MarketsApi
-   * @version 3.0.0
+   * @version 1.0.0
    */
 
   /**
@@ -69,7 +69,7 @@
      * 
      * @param {String} sport Sport key
      * @param {module:api/MarketsApi~getMarketCloseTimesCallback} callback The callback function, accepting three arguments: error, data, response
-     * data is of type: {Array.<module:model/InlineResponse2008>}
+     * data is of type: {@link Array.<module:model/InlineResponse2008>}
      */
     this.getMarketCloseTimes = function(sport, callback) {
       var postBody = null;
@@ -115,7 +115,7 @@
      * 
      * @param {String} sport Sport key
      * @param {module:api/MarketsApi~getMarketResolveTimesCallback} callback The callback function, accepting three arguments: error, data, response
-     * data is of type: {Array.<module:model/InlineResponse2008>}
+     * data is of type: {@link Array.<module:model/InlineResponse2008>}
      */
     this.getMarketResolveTimes = function(sport, callback) {
       var postBody = null;
@@ -161,7 +161,7 @@
      * 
      * @param {String} sport Sport key
      * @param {module:api/MarketsApi~getMarketSelectionsCallback} callback The callback function, accepting three arguments: error, data, response
-     * data is of type: {Array.<module:model/InlineResponse2009>}
+     * data is of type: {@link Array.<module:model/InlineResponse2009>}
      */
     this.getMarketSelections = function(sport, callback) {
       var postBody = null;
@@ -207,7 +207,7 @@
      * 
      * @param {String} sport Sport key
      * @param {module:api/MarketsApi~getMarketStatesCallback} callback The callback function, accepting three arguments: error, data, response
-     * data is of type: {Array.<module:model/InlineResponse20010>}
+     * data is of type: {@link Array.<module:model/InlineResponse20010>}
      */
     this.getMarketStates = function(sport, callback) {
       var postBody = null;
@@ -253,7 +253,7 @@
      * 
      * @param {String} sport Sport key
      * @param {module:api/MarketsApi~getMarketsCallback} callback The callback function, accepting three arguments: error, data, response
-     * data is of type: {Array.<module:model/InlineResponse20011>}
+     * data is of type: {@link Array.<module:model/InlineResponse20011>}
      */
     this.getMarkets = function(sport, callback) {
       var postBody = null;

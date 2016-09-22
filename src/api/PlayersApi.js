@@ -42,7 +42,7 @@
   /**
    * Players service.
    * @module api/PlayersApi
-   * @version 3.0.0
+   * @version 1.0.0
    */
 
   /**
@@ -71,7 +71,7 @@
      * @param {Object} opts Optional parameters
      * @param {Number} opts.teamId Filter players by team id
      * @param {module:api/PlayersApi~getPlayersCallback} callback The callback function, accepting three arguments: error, data, response
-     * data is of type: {Array.<module:model/InlineResponse20014>}
+     * data is of type: {@link Array.<module:model/InlineResponse20014>}
      */
     this.getPlayers = function(sport, opts, callback) {
       opts = opts || {};

@@ -42,7 +42,7 @@
   /**
    * Series service.
    * @module api/SeriesApi
-   * @version 3.0.0
+   * @version 1.0.0
    */
 
   /**
@@ -71,7 +71,7 @@
      * @param {Object} opts Optional parameters
      * @param {Number} opts.tournamentId ID of the tournament in the form of an integer
      * @param {module:api/SeriesApi~getSeriesCallback} callback The callback function, accepting three arguments: error, data, response
-     * data is of type: {Array.<module:model/InlineResponse20015>}
+     * data is of type: {@link Array.<module:model/InlineResponse20015>}
      */
     this.getSeries = function(sport, opts, callback) {
       opts = opts || {};
@@ -120,7 +120,7 @@
      * @param {Number} id ID of the state in the form of an integer
      * @param {String} sport Sport key
      * @param {module:api/SeriesApi~getSeriesStateCallback} callback The callback function, accepting three arguments: error, data, response
-     * data is of type: {module:model/InlineResponse20016}
+     * data is of type: {@link module:model/InlineResponse20016}
      */
     this.getSeriesState = function(id, sport, callback) {
       var postBody = null;
@@ -172,7 +172,7 @@
      * 
      * @param {String} sport Sport key
      * @param {module:api/SeriesApi~getSeriesStatesCallback} callback The callback function, accepting three arguments: error, data, response
-     * data is of type: {Array.<module:model/InlineResponse20016>}
+     * data is of type: {@link Array.<module:model/InlineResponse20016>}
      */
     this.getSeriesStates = function(sport, callback) {
       var postBody = null;
@@ -218,7 +218,7 @@
      * 
      * @param {String} sport Sport key
      * @param {module:api/SeriesApi~getSeriesTypesCallback} callback The callback function, accepting three arguments: error, data, response
-     * data is of type: {Array.<module:model/InlineResponse20017>}
+     * data is of type: {@link Array.<module:model/InlineResponse20017>}
      */
     this.getSeriesTypes = function(sport, callback) {
       var postBody = null;

@@ -42,7 +42,7 @@
   /**
    * Leagues service.
    * @module api/LeaguesApi
-   * @version 3.0.0
+   * @version 1.0.0
    */
 
   /**
@@ -69,7 +69,7 @@
      * 
      * @param {String} sport Sport key
      * @param {module:api/LeaguesApi~getLeaguesCallback} callback The callback function, accepting three arguments: error, data, response
-     * data is of type: {Array.<module:model/InlineResponse2001>}
+     * data is of type: {@link Array.<module:model/InlineResponse2001>}
      */
     this.getLeagues = function(sport, callback) {
       var postBody = null;

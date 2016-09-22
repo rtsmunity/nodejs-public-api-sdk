@@ -45,7 +45,7 @@
   /**
    * The InlineResponse2003Markets model module.
    * @module model/InlineResponse2003Markets
-   * @version 3.0.0
+   * @version 1.0.0
    */
 
   /**

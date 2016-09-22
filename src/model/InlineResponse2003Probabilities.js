@@ -45,7 +45,7 @@
   /**
    * The InlineResponse2003Probabilities model module.
    * @module model/InlineResponse2003Probabilities
-   * @version 3.0.0
+   * @version 1.0.0
    */
 
   /**

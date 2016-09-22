@@ -42,7 +42,7 @@
   /**
    * Matches service.
    * @module api/MatchesApi
-   * @version 3.0.0
+   * @version 1.0.0
    */
 
   /**
@@ -69,7 +69,7 @@
      * 
      * @param {String} sport Sport key
      * @param {module:api/MatchesApi~getMatchPositionsCallback} callback The callback function, accepting three arguments: error, data, response
-     * data is of type: {Array.<module:model/InlineResponse20012>}
+     * data is of type: {@link Array.<module:model/InlineResponse20012>}
      */
     this.getMatchPositions = function(sport, callback) {
       var postBody = null;
@@ -115,7 +115,7 @@
      * 
      * @param {String} sport Sport key
      * @param {module:api/MatchesApi~getMatchStatesCallback} callback The callback function, accepting three arguments: error, data, response
-     * data is of type: {Array.<module:model/InlineResponse20010>}
+     * data is of type: {@link Array.<module:model/InlineResponse20010>}
      */
     this.getMatchStates = function(sport, callback) {
       var postBody = null;
@@ -165,7 +165,7 @@
      * @param {Number} opts.leagueId ID of the league in the form of an integer
      * @param {Number} opts.seriesId ID of the series in the form of an integer
      * @param {module:api/MatchesApi~getMatchesCallback} callback The callback function, accepting three arguments: error, data, response
-     * data is of type: {Array.<module:model/InlineResponse20013>}
+     * data is of type: {@link Array.<module:model/InlineResponse20013>}
      */
     this.getMatches = function(sport, opts, callback) {
       opts = opts || {};

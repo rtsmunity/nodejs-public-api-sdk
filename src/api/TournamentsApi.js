@@ -42,7 +42,7 @@
   /**
    * Tournaments service.
    * @module api/TournamentsApi
-   * @version 3.0.0
+   * @version 1.0.0
    */
 
   /**
@@ -72,7 +72,7 @@
      * @param {String} opts.dateFrom Date to which filter tournaments
      * @param {String} opts.dateTo Date to which filter tournaments
      * @param {module:api/TournamentsApi~getTournamentsCallback} callback The callback function, accepting three arguments: error, data, response
-     * data is of type: {Array.<module:model/InlineResponse20019>}
+     * data is of type: {@link Array.<module:model/InlineResponse20019>}
      */
     this.getTournaments = function(sport, opts, callback) {
       opts = opts || {};

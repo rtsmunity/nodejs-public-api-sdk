@@ -44,11 +44,7 @@ module.exports = function (apiKey, clientKeyPath, clientCertPath, passphrase, mo
   var resultSdk = {}
   for (var i in sdk) {
     if (i === 'ApiClient') { continue } // Skip ApiClient
-    if (!sdk.hasOwnProperty(i)) {
-      console.log('skip', i)
-      continue
-    }
-
+    if (!sdk.hasOwnProperty(i)) { continue } // Skip not interesting properties
     if (typeof (sdk[i]) !== 'function') { continue } // Skip everything except functions
     if (!i.endsWith('Api')) { continue } // Skip models constructors
 
