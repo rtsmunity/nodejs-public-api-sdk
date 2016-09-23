@@ -1,6 +1,6 @@
 {
   "name": "rtsmunity-public-api-sdk",
-  "version": "0.0.11",
+  "version": "0.0.12",
   "description": "RTS munity REST API SDK",
   "license": "Apache-2.0",
   "main": "./index.js",
