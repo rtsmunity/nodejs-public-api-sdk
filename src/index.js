@@ -34,7 +34,7 @@
   'use strict';
 
   /**
-   * RTS munity REST API SDK.<br>
+   * RTSmunity REST API SDK.<br>
    * The <code>index</code> module provides access to constructors for all the classes which comprise the public API.
    * <p>
    * An AMD (recommended!) or CommonJS application will generally do something equivalent to the following:
