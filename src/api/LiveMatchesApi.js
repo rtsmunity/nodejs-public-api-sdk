@@ -182,13 +182,16 @@
 
     /**
      * Match statistics feed
-     * 
+     *     + Schema         {             \&quot;type\&quot;: \&quot;object\&quot;,             \&quot;properties\&quot;: {                 \&quot;sequence\&quot;: {                     \&quot;type\&quot;: \&quot;number\&quot;                 },                 \&quot;match_time\&quot;: {                     \&quot;type\&quot;: \&quot;number\&quot;                 },                 \&quot;match_id\&quot;: {                     \&quot;type\&quot;: \&quot;number\&quot;                 },                 \&quot;date_created\&quot;: {                     \&quot;type\&quot;: \&quot;string\&quot;                 },                 \&quot;home_is_dark\&quot;: {                     \&quot;type\&quot;: \&quot;boolean\&quot;                 },                 \&quot;round_number\&quot;: {                     \&quot;type\&quot;: \&quot;number\&quot;                 },                 \&quot;map_name\&quot;: {                     \&quot;type\&quot;: \&quot;string\&quot;                 },                 \&quot;home_team\&quot;: {                     \&quot;type\&quot;: \&quot;object\&quot;,                     \&quot;properties\&quot;: {                         \&quot;type\&quot;: \&quot;object\&quot;,                         \&quot;properties\&quot;: {                             \&quot;turrets\&quot;: {                                 \&quot;type\&quot;: \&quot;number\&quot;                             },                             \&quot;towers\&quot;: {                                 \&quot;type\&quot;: \&quot;number\&quot;                             },                             \&quot;round_score\&quot;: {                                 \&quot;type\&quot;: \&quot;number\&quot;                             },                             \&quot;kills\&quot;: {                                 \&quot;type\&quot;: \&quot;number\&quot;                             },                             \&quot;gold\&quot;: {                                 \&quot;type\&quot;: \&quot;number\&quot;                             }                         }                     }                 },                 \&quot;away_team\&quot;: {                     \&quot;type\&quot;: \&quot;object\&quot;,                     \&quot;properties\&quot;: {                         \&quot;type\&quot;: \&quot;object\&quot;,                         \&quot;properties\&quot;: {                             \&quot;turrets\&quot;: {                                 \&quot;type\&quot;: \&quot;number\&quot;                             },                             \&quot;towers\&quot;: {                                 \&quot;type\&quot;: \&quot;number\&quot;                             },                             \&quot;round_score\&quot;: {                                 \&quot;type\&quot;: \&quot;number\&quot;                             },                             \&quot;kills\&quot;: {                                 \&quot;type\&quot;: \&quot;number\&quot;                             },                             \&quot;gold\&quot;: {                                 \&quot;type\&quot;: \&quot;number\&quot;                             }                         }                     }                 }             }         }  
      * @param {Number} id ID of the match in the form of an integer
+     * @param {String} sport Sport key
+     * @param {String} sport2 Sport key
+     * @param {String} sport3 Sport key
      * @param {Object} opts Optional parameters
      * @param {Number} opts.sequence Sequence number for filtering states
      * @param {module:api/LiveMatchesApi~getMatchStatisticsFeedCallback} callback The callback function, accepting three arguments: error, data, response
      */
-    this.getMatchStatisticsFeed = function(id, opts, callback) {
+    this.getMatchStatisticsFeed = function(id, sport, sport2, sport3, opts, callback) {
       opts = opts || {};
       var postBody = null;
 
@@ -197,9 +200,27 @@
         throw "Missing the required parameter 'id' when calling getMatchStatisticsFeed";
       }
 
+      // verify the required parameter 'sport' is set
+      if (sport == undefined || sport == null) {
+        throw "Missing the required parameter 'sport' when calling getMatchStatisticsFeed";
+      }
+
+      // verify the required parameter 'sport2' is set
+      if (sport2 == undefined || sport2 == null) {
+        throw "Missing the required parameter 'sport2' when calling getMatchStatisticsFeed";
+      }
+
+      // verify the required parameter 'sport3' is set
+      if (sport3 == undefined || sport3 == null) {
+        throw "Missing the required parameter 'sport3' when calling getMatchStatisticsFeed";
+      }
+
 
       var pathParams = {
-        'id': id
+        'id': id,
+        'sport': sport,
+        'sport': sport2,
+        'sport': sport3
       };
       var queryParams = {
         'sequence': opts['sequence']
@@ -231,14 +252,17 @@
 
     /**
      * Match statistics state
-     * 
+     *     + Schema         {             \&quot;type\&quot;: \&quot;object\&quot;,             \&quot;properties\&quot;: {                 \&quot;sequence\&quot;: {                     \&quot;type\&quot;: \&quot;number\&quot;                 },                 \&quot;match_time\&quot;: {                     \&quot;type\&quot;: \&quot;number\&quot;                 },                 \&quot;match_id\&quot;: {                     \&quot;type\&quot;: \&quot;number\&quot;                 },                 \&quot;date_created\&quot;: {                     \&quot;type\&quot;: \&quot;string\&quot;                 },                 \&quot;home_is_dark\&quot;: {                     \&quot;type\&quot;: \&quot;boolean\&quot;                 },                 \&quot;round_number\&quot;: {                     \&quot;type\&quot;: \&quot;number\&quot;                 },                 \&quot;map_name\&quot;: {                     \&quot;type\&quot;: \&quot;string\&quot;                 },                 \&quot;home_team\&quot;: {                     \&quot;type\&quot;: \&quot;object\&quot;,                     \&quot;properties\&quot;: {                         \&quot;type\&quot;: \&quot;object\&quot;,                         \&quot;properties\&quot;: {                             \&quot;turrets\&quot;: {                                 \&quot;type\&quot;: \&quot;number\&quot;                             },                             \&quot;towers\&quot;: {                                 \&quot;type\&quot;: \&quot;number\&quot;                             },                             \&quot;round_score\&quot;: {                                 \&quot;type\&quot;: \&quot;number\&quot;                             },                             \&quot;kills\&quot;: {                                 \&quot;type\&quot;: \&quot;number\&quot;                             },                             \&quot;gold\&quot;: {                                 \&quot;type\&quot;: \&quot;number\&quot;                             }                         }                     }                 },                 \&quot;away_team\&quot;: {                     \&quot;type\&quot;: \&quot;object\&quot;,                     \&quot;properties\&quot;: {                         \&quot;type\&quot;: \&quot;object\&quot;,                         \&quot;properties\&quot;: {                             \&quot;turrets\&quot;: {                                 \&quot;type\&quot;: \&quot;number\&quot;                             },                             \&quot;towers\&quot;: {                                 \&quot;type\&quot;: \&quot;number\&quot;                             },                             \&quot;round_score\&quot;: {                                 \&quot;type\&quot;: \&quot;number\&quot;                             },                             \&quot;kills\&quot;: {                                 \&quot;type\&quot;: \&quot;number\&quot;                             },                             \&quot;gold\&quot;: {                                 \&quot;type\&quot;: \&quot;number\&quot;                             }                         }                     }                 }             }         }  
      * @param {Number} id ID of the match in the form of an integer
+     * @param {String} sport Sport key
+     * @param {String} sport2 Sport key
+     * @param {String} sport3 Sport key
      * @param {Object} opts Optional parameters
      * @param {Number} opts.sequence Sequence number for filtering
      * @param {String} opts.expand Expand match detail
      * @param {module:api/LiveMatchesApi~getMatchStatisticsStateCallback} callback The callback function, accepting three arguments: error, data, response
      */
-    this.getMatchStatisticsState = function(id, opts, callback) {
+    this.getMatchStatisticsState = function(id, sport, sport2, sport3, opts, callback) {
       opts = opts || {};
       var postBody = null;
 
@@ -247,9 +271,27 @@
         throw "Missing the required parameter 'id' when calling getMatchStatisticsState";
       }
 
+      // verify the required parameter 'sport' is set
+      if (sport == undefined || sport == null) {
+        throw "Missing the required parameter 'sport' when calling getMatchStatisticsState";
+      }
+
+      // verify the required parameter 'sport2' is set
+      if (sport2 == undefined || sport2 == null) {
+        throw "Missing the required parameter 'sport2' when calling getMatchStatisticsState";
+      }
+
+      // verify the required parameter 'sport3' is set
+      if (sport3 == undefined || sport3 == null) {
+        throw "Missing the required parameter 'sport3' when calling getMatchStatisticsState";
+      }
+
 
       var pathParams = {
-        'id': id
+        'id': id,
+        'sport': sport,
+        'sport': sport2,
+        'sport': sport3
       };
       var queryParams = {
         'sequence': opts['sequence'],
