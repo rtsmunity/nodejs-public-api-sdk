@@ -6,7 +6,7 @@ var sdk = require('./src/index.js')
 
 var API_URL = {
   local: 'https://localhost:3000',
-  production: 'https://api.rtsmunity.com:6210',
+  production: 'https://api.rtsmunity.com:6220',
   sandbox: 'https://api.sandbox.rtsmunity.com:6210'
 }
 
