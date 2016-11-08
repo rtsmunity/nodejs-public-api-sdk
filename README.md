@@ -24,7 +24,7 @@ var KEY_PATH = 'PATH_TO_YOUR_CLIENT_KEY'
 var CERT_PATH = 'PATH_TO_YOUR_CLIENT_CRT'
 var PASSPHRASE = 'PASSPHRASE_FOR_YOUR_CLIENT_KEY'
 
-var api = RTSmunitySDK(API_KEY, KEY_PATH, CERT_PATH, PASSPHRASE, 'sandbox')
+var api = RTSmunitySDK.init(API_KEY, KEY_PATH, CERT_PATH, PASSPHRASE, RTSmunitySDK.MODE.SANDBOX)
 
 api.sports.getSports((err, sports) => {
   if (err) {
