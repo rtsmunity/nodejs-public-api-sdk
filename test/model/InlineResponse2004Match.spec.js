@@ -39,7 +39,7 @@
   var instance;
 
   beforeEach(function() {
-    instance = new RtsmunityPublicApiSdk.InlineResponse20017();
+    instance = new RtsmunityPublicApiSdk.InlineResponse2004Match();
   });
 
   var getProperty = function(object, getter, property) {
@@ -58,58 +58,70 @@
       object[property] = value;
   }
 
-  describe('InlineResponse20017', function() {
-    it('should create an instance of InlineResponse20017', function() {
-      // uncomment below and update the code to test InlineResponse20017
-      //var instane = new RtsmunityPublicApiSdk.InlineResponse20017();
-      //expect(instance).to.be.a(RtsmunityPublicApiSdk.InlineResponse20017);
+  describe('InlineResponse2004Match', function() {
+    it('should create an instance of InlineResponse2004Match', function() {
+      // uncomment below and update the code to test InlineResponse2004Match
+      //var instane = new RtsmunityPublicApiSdk.InlineResponse2004Match();
+      //expect(instance).to.be.a(RtsmunityPublicApiSdk.InlineResponse2004Match);
     });
 
     it('should have the property id (base name: "id")', function() {
       // uncomment below and update the code to test the property id
-      //var instane = new RtsmunityPublicApiSdk.InlineResponse20017();
+      //var instane = new RtsmunityPublicApiSdk.InlineResponse2004Match();
       //expect(instance).to.be();
     });
 
-    it('should have the property name (base name: "name")', function() {
-      // uncomment below and update the code to test the property name
-      //var instane = new RtsmunityPublicApiSdk.InlineResponse20017();
+    it('should have the property seriesMatchSequence (base name: "series_match_sequence")', function() {
+      // uncomment below and update the code to test the property seriesMatchSequence
+      //var instane = new RtsmunityPublicApiSdk.InlineResponse2004Match();
       //expect(instance).to.be();
     });
 
-    it('should have the property shortcut (base name: "shortcut")', function() {
-      // uncomment below and update the code to test the property shortcut
-      //var instane = new RtsmunityPublicApiSdk.InlineResponse20017();
+    it('should have the property startDate (base name: "start_date")', function() {
+      // uncomment below and update the code to test the property startDate
+      //var instane = new RtsmunityPublicApiSdk.InlineResponse2004Match();
       //expect(instance).to.be();
     });
 
-    it('should have the property description (base name: "description")', function() {
-      // uncomment below and update the code to test the property description
-      //var instane = new RtsmunityPublicApiSdk.InlineResponse20017();
+    it('should have the property endDate (base name: "end_date")', function() {
+      // uncomment below and update the code to test the property endDate
+      //var instane = new RtsmunityPublicApiSdk.InlineResponse2004Match();
       //expect(instance).to.be();
     });
 
-    it('should have the property dateFrom (base name: "date_from")', function() {
-      // uncomment below and update the code to test the property dateFrom
-      //var instane = new RtsmunityPublicApiSdk.InlineResponse20017();
+    it('should have the property darkTeamId (base name: "dark_team_id")', function() {
+      // uncomment below and update the code to test the property darkTeamId
+      //var instane = new RtsmunityPublicApiSdk.InlineResponse2004Match();
       //expect(instance).to.be();
     });
 
-    it('should have the property dateTo (base name: "date_to")', function() {
-      // uncomment below and update the code to test the property dateTo
-      //var instane = new RtsmunityPublicApiSdk.InlineResponse20017();
+    it('should have the property lightTeamId (base name: "light_team_id")', function() {
+      // uncomment below and update the code to test the property lightTeamId
+      //var instane = new RtsmunityPublicApiSdk.InlineResponse2004Match();
+      //expect(instance).to.be();
+    });
+
+    it('should have the property seriesId (base name: "series_id")', function() {
+      // uncomment below and update the code to test the property seriesId
+      //var instane = new RtsmunityPublicApiSdk.InlineResponse2004Match();
+      //expect(instance).to.be();
+    });
+
+    it('should have the property tournamentId (base name: "tournament_id")', function() {
+      // uncomment below and update the code to test the property tournamentId
+      //var instane = new RtsmunityPublicApiSdk.InlineResponse2004Match();
       //expect(instance).to.be();
     });
 
     it('should have the property leagueId (base name: "league_id")', function() {
       // uncomment below and update the code to test the property leagueId
-      //var instane = new RtsmunityPublicApiSdk.InlineResponse20017();
+      //var instane = new RtsmunityPublicApiSdk.InlineResponse2004Match();
       //expect(instance).to.be();
     });
 
-    it('should have the property teams (base name: "teams")', function() {
-      // uncomment below and update the code to test the property teams
-      //var instane = new RtsmunityPublicApiSdk.InlineResponse20017();
+    it('should have the property matchStateId (base name: "match_state_id")', function() {
+      // uncomment below and update the code to test the property matchStateId
+      //var instane = new RtsmunityPublicApiSdk.InlineResponse2004Match();
       //expect(instance).to.be();
     });
 

@@ -1,6 +1,6 @@
 /**
  * PULL API
- * REST api for static sport data.  Every resource is protected by an **API key** which must be placed in X-Api-Key reques header:          X-Api-Key: your_api_key  and every request has to be made with client certificate.  
+ * REST api for static sport data.  Every resource is protected by an **API key** which must be placed in X-Api-Key request header:  X-Api-Key: your_api_key  and every request has to be made with client certificate.
  *
  * OpenAPI spec version: 
  * 
@@ -25,18 +25,18 @@
 (function(root, factory) {
   if (typeof define === 'function' && define.amd) {
     // AMD. Register as an anonymous module.
-    define(['ApiClient', 'model/InlineResponse2008', 'model/InlineResponse2009', 'model/InlineResponse20010', 'model/InlineResponse20011'], factory);
+    define(['ApiClient', 'model/InlineResponse2008', 'model/InlineResponse2009', 'model/InlineResponse20010'], factory);
   } else if (typeof module === 'object' && module.exports) {
     // CommonJS-like environments that support module.exports, like Node.
-    module.exports = factory(require('../ApiClient'), require('../model/InlineResponse2008'), require('../model/InlineResponse2009'), require('../model/InlineResponse20010'), require('../model/InlineResponse20011'));
+    module.exports = factory(require('../ApiClient'), require('../model/InlineResponse2008'), require('../model/InlineResponse2009'), require('../model/InlineResponse20010'));
   } else {
     // Browser globals (root is window)
     if (!root.RtsmunityPublicApiSdk) {
       root.RtsmunityPublicApiSdk = {};
     }
-    root.RtsmunityPublicApiSdk.MarketsApi = factory(root.RtsmunityPublicApiSdk.ApiClient, root.RtsmunityPublicApiSdk.InlineResponse2008, root.RtsmunityPublicApiSdk.InlineResponse2009, root.RtsmunityPublicApiSdk.InlineResponse20010, root.RtsmunityPublicApiSdk.InlineResponse20011);
+    root.RtsmunityPublicApiSdk.MarketsApi = factory(root.RtsmunityPublicApiSdk.ApiClient, root.RtsmunityPublicApiSdk.InlineResponse2008, root.RtsmunityPublicApiSdk.InlineResponse2009, root.RtsmunityPublicApiSdk.InlineResponse20010);
   }
-}(this, function(ApiClient, InlineResponse2008, InlineResponse2009, InlineResponse20010, InlineResponse20011) {
+}(this, function(ApiClient, InlineResponse2008, InlineResponse2009, InlineResponse20010) {
   'use strict';
 
   /**
@@ -198,7 +198,7 @@
      * Callback function to receive the result of the getMarketStates operation.
      * @callback module:api/MarketsApi~getMarketStatesCallback
      * @param {String} error Error message, if any.
-     * @param {Array.<module:model/InlineResponse20010>} data The data returned by the service call.
+     * @param {Array.<module:model/InlineResponse2009>} data The data returned by the service call.
      * @param {String} response The complete HTTP response.
      */
 
@@ -207,7 +207,7 @@
      * 
      * @param {String} sport Sport key
      * @param {module:api/MarketsApi~getMarketStatesCallback} callback The callback function, accepting three arguments: error, data, response
-     * data is of type: {@link Array.<module:model/InlineResponse20010>}
+     * data is of type: {@link Array.<module:model/InlineResponse2009>}
      */
     this.getMarketStates = function(sport, callback) {
       var postBody = null;
@@ -231,7 +231,7 @@
       var authNames = [];
       var contentTypes = [];
       var accepts = ['application/json; charset=utf-8'];
-      var returnType = [InlineResponse20010];
+      var returnType = [InlineResponse2009];
 
       return this.apiClient.callApi(
         '/{sport}/market/states', 'GET',
@@ -244,7 +244,7 @@
      * Callback function to receive the result of the getMarkets operation.
      * @callback module:api/MarketsApi~getMarketsCallback
      * @param {String} error Error message, if any.
-     * @param {Array.<module:model/InlineResponse20011>} data The data returned by the service call.
+     * @param {Array.<module:model/InlineResponse20010>} data The data returned by the service call.
      * @param {String} response The complete HTTP response.
      */
 
@@ -253,7 +253,7 @@
      * 
      * @param {String} sport Sport key
      * @param {module:api/MarketsApi~getMarketsCallback} callback The callback function, accepting three arguments: error, data, response
-     * data is of type: {@link Array.<module:model/InlineResponse20011>}
+     * data is of type: {@link Array.<module:model/InlineResponse20010>}
      */
     this.getMarkets = function(sport, callback) {
       var postBody = null;
@@ -277,7 +277,7 @@
       var authNames = [];
       var contentTypes = [];
       var accepts = ['application/json; charset=utf-8'];
-      var returnType = [InlineResponse20011];
+      var returnType = [InlineResponse20010];
 
       return this.apiClient.callApi(
         '/{sport}/markets', 'GET',

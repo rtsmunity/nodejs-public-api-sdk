@@ -12,7 +12,7 @@ Method | HTTP request | Description
 
 <a name="getSeries"></a>
 # **getSeries**
-> [InlineResponse20015] getSeries(sport, opts)
+> [InlineResponse20013] getSeries(sport, opts)
 
 List All Series for tournament
 
@@ -49,7 +49,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**[InlineResponse20015]**](InlineResponse20015.md)
+[**[InlineResponse20013]**](InlineResponse20013.md)
 
 ### Authorization
 
@@ -62,7 +62,7 @@ No authorization required
 
 <a name="getSeriesState"></a>
 # **getSeriesState**
-> InlineResponse20016 getSeriesState(id, sport)
+> InlineResponse20014 getSeriesState(id, sport)
 
 Get concrete Series state
 
@@ -98,7 +98,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse20016**](InlineResponse20016.md)
+[**InlineResponse20014**](InlineResponse20014.md)
 
 ### Authorization
 
@@ -111,7 +111,7 @@ No authorization required
 
 <a name="getSeriesStates"></a>
 # **getSeriesStates**
-> [InlineResponse20016] getSeriesStates(sport)
+> [InlineResponse20014] getSeriesStates(sport)
 
 List All Series states
 
@@ -144,7 +144,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**[InlineResponse20016]**](InlineResponse20016.md)
+[**[InlineResponse20014]**](InlineResponse20014.md)
 
 ### Authorization
 
@@ -157,7 +157,7 @@ No authorization required
 
 <a name="getSeriesTypes"></a>
 # **getSeriesTypes**
-> [InlineResponse20017] getSeriesTypes(sport)
+> [InlineResponse20015] getSeriesTypes(sport)
 
 List All Series types
 
@@ -190,7 +190,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**[InlineResponse20017]**](InlineResponse20017.md)
+[**[InlineResponse20015]**](InlineResponse20015.md)
 
 ### Authorization
 

@@ -1,6 +1,6 @@
 /**
  * PULL API
- * REST api for static sport data.  Every resource is protected by an **API key** which must be placed in X-Api-Key reques header:          X-Api-Key: your_api_key  and every request has to be made with client certificate.  
+ * REST api for static sport data.  Every resource is protected by an **API key** which must be placed in X-Api-Key request header:  X-Api-Key: your_api_key  and every request has to be made with client certificate.
  *
  * OpenAPI spec version: 
  * 
@@ -25,18 +25,18 @@
 (function(root, factory) {
   if (typeof define === 'function' && define.amd) {
     // AMD. Register as an anonymous module.
-    define(['ApiClient', 'model/InlineResponse2003Markets', 'model/InlineResponse2005'], factory);
+    define(['ApiClient', 'model/InlineResponse2003Markets', 'model/InlineResponse2007Series'], factory);
   } else if (typeof module === 'object' && module.exports) {
     // CommonJS-like environments that support module.exports, like Node.
-    module.exports = factory(require('../ApiClient'), require('./InlineResponse2003Markets'), require('./InlineResponse2005'));
+    module.exports = factory(require('../ApiClient'), require('./InlineResponse2003Markets'), require('./InlineResponse2007Series'));
   } else {
     // Browser globals (root is window)
     if (!root.RtsmunityPublicApiSdk) {
       root.RtsmunityPublicApiSdk = {};
     }
-    root.RtsmunityPublicApiSdk.InlineResponse2007 = factory(root.RtsmunityPublicApiSdk.ApiClient, root.RtsmunityPublicApiSdk.InlineResponse2003Markets, root.RtsmunityPublicApiSdk.InlineResponse2005);
+    root.RtsmunityPublicApiSdk.InlineResponse2007 = factory(root.RtsmunityPublicApiSdk.ApiClient, root.RtsmunityPublicApiSdk.InlineResponse2003Markets, root.RtsmunityPublicApiSdk.InlineResponse2007Series);
   }
-}(this, function(ApiClient, InlineResponse2003Markets, InlineResponse2005) {
+}(this, function(ApiClient, InlineResponse2003Markets, InlineResponse2007Series) {
   'use strict';
 
 
@@ -88,7 +88,7 @@
         obj['date_created'] = ApiClient.convertToType(data['date_created'], 'String');
       }
       if (data.hasOwnProperty('series')) {
-        obj['series'] = InlineResponse2005.constructFromObject(data['series']);
+        obj['series'] = InlineResponse2007Series.constructFromObject(data['series']);
       }
       if (data.hasOwnProperty('markets')) {
         obj['markets'] = ApiClient.convertToType(data['markets'], [InlineResponse2003Markets]);
@@ -114,7 +114,7 @@
    */
   exports.prototype['date_created'] = undefined;
   /**
-   * @member {module:model/InlineResponse2005} series
+   * @member {module:model/InlineResponse2007Series} series
    */
   exports.prototype['series'] = undefined;
   /**

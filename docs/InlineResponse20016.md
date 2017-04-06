@@ -4,6 +4,8 @@
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **id** | **Number** |  | [optional] 
-**state** | **String** |  | [optional] 
+**name** | **String** |  | [optional] 
+**shortcut** | **String** |  | [optional] 
+**players** | **[Number]** |  | [optional] 
 
 

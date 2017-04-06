@@ -34,7 +34,7 @@
     if (!root.RtsmunityPublicApiSdk) {
       root.RtsmunityPublicApiSdk = {};
     }
-    root.RtsmunityPublicApiSdk.InlineResponse20011 = factory(root.RtsmunityPublicApiSdk.ApiClient);
+    root.RtsmunityPublicApiSdk.InlineResponse2004Match = factory(root.RtsmunityPublicApiSdk.ApiClient);
   }
 }(this, function(ApiClient) {
   'use strict';
@@ -43,14 +43,14 @@
 
 
   /**
-   * The InlineResponse20011 model module.
-   * @module model/InlineResponse20011
+   * The InlineResponse2004Match model module.
+   * @module model/InlineResponse2004Match
    * @version 1.0.0
    */
 
   /**
-   * Constructs a new <code>InlineResponse20011</code>.
-   * @alias module:model/InlineResponse20011
+   * Constructs a new <code>InlineResponse2004Match</code>.
+   * @alias module:model/InlineResponse2004Match
    * @class
    */
   var exports = function() {
@@ -69,11 +69,11 @@
   };
 
   /**
-   * Constructs a <code>InlineResponse20011</code> from a plain JavaScript object, optionally creating a new instance.
+   * Constructs a <code>InlineResponse2004Match</code> from a plain JavaScript object, optionally creating a new instance.
    * Copies all relevant properties from <code>data</code> to <code>obj</code> if supplied or a new instance if not.
    * @param {Object} data The plain JavaScript object bearing properties of interest.
-   * @param {module:model/InlineResponse20011} obj Optional instance to populate.
-   * @return {module:model/InlineResponse20011} The populated <code>InlineResponse20011</code> instance.
+   * @param {module:model/InlineResponse2004Match} obj Optional instance to populate.
+   * @return {module:model/InlineResponse2004Match} The populated <code>InlineResponse2004Match</code> instance.
    */
   exports.constructFromObject = function(data, obj) {
     if (data) {
@@ -106,8 +106,8 @@
       if (data.hasOwnProperty('league_id')) {
         obj['league_id'] = ApiClient.convertToType(data['league_id'], 'Number');
       }
-      if (data.hasOwnProperty('win_team_id')) {
-        obj['win_team_id'] = ApiClient.convertToType(data['win_team_id'], 'Number');
+      if (data.hasOwnProperty('match_state_id')) {
+        obj['match_state_id'] = ApiClient.convertToType(data['match_state_id'], 'Number');
       }
     }
     return obj;
@@ -150,9 +150,9 @@
    */
   exports.prototype['league_id'] = undefined;
   /**
-   * @member {Number} win_team_id
+   * @member {Number} match_state_id
    */
-  exports.prototype['win_team_id'] = undefined;
+  exports.prototype['match_state_id'] = undefined;
 
 
 

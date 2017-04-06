@@ -1,6 +1,6 @@
 /**
  * PULL API
- * REST api for static sport data.  Every resource is protected by an **API key** which must be placed in X-Api-Key reques header:          X-Api-Key: your_api_key  and every request has to be made with client certificate.  
+ * REST api for static sport data.  Every resource is protected by an **API key** which must be placed in X-Api-Key request header:  X-Api-Key: your_api_key  and every request has to be made with client certificate.
  *
  * OpenAPI spec version: 
  * 
@@ -58,6 +58,9 @@
 
 
 
+
+
+
   };
 
   /**
@@ -74,8 +77,17 @@
       if (data.hasOwnProperty('id')) {
         obj['id'] = ApiClient.convertToType(data['id'], 'Number');
       }
-      if (data.hasOwnProperty('name')) {
-        obj['name'] = ApiClient.convertToType(data['name'], 'String');
+      if (data.hasOwnProperty('team_id')) {
+        obj['team_id'] = ApiClient.convertToType(data['team_id'], 'Number');
+      }
+      if (data.hasOwnProperty('first_name')) {
+        obj['first_name'] = ApiClient.convertToType(data['first_name'], 'String');
+      }
+      if (data.hasOwnProperty('last_name')) {
+        obj['last_name'] = ApiClient.convertToType(data['last_name'], 'String');
+      }
+      if (data.hasOwnProperty('nickname')) {
+        obj['nickname'] = ApiClient.convertToType(data['nickname'], 'String');
       }
     }
     return obj;
@@ -86,9 +98,21 @@
    */
   exports.prototype['id'] = undefined;
   /**
-   * @member {String} name
+   * @member {Number} team_id
    */
-  exports.prototype['name'] = undefined;
+  exports.prototype['team_id'] = undefined;
+  /**
+   * @member {String} first_name
+   */
+  exports.prototype['first_name'] = undefined;
+  /**
+   * @member {String} last_name
+   */
+  exports.prototype['last_name'] = undefined;
+  /**
+   * @member {String} nickname
+   */
+  exports.prototype['nickname'] = undefined;
 
 
 

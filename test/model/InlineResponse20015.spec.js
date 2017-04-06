@@ -1,6 +1,6 @@
 /**
  * PULL API
- * REST api for static sport data.  Every resource is protected by an **API key** which must be placed in X-Api-Key reques header:          X-Api-Key: your_api_key  and every request has to be made with client certificate.  
+ * REST api for static sport data.  Every resource is protected by an **API key** which must be placed in X-Api-Key request header:  X-Api-Key: your_api_key  and every request has to be made with client certificate.
  *
  * OpenAPI spec version: 
  * 
@@ -71,44 +71,14 @@
       //expect(instance).to.be();
     });
 
-    it('should have the property homeTeamId (base name: "home_team_id")', function() {
-      // uncomment below and update the code to test the property homeTeamId
+    it('should have the property name (base name: "name")', function() {
+      // uncomment below and update the code to test the property name
       //var instane = new RtsmunityPublicApiSdk.InlineResponse20015();
       //expect(instance).to.be();
     });
 
-    it('should have the property awayTeamId (base name: "away_team_id")', function() {
-      // uncomment below and update the code to test the property awayTeamId
-      //var instane = new RtsmunityPublicApiSdk.InlineResponse20015();
-      //expect(instance).to.be();
-    });
-
-    it('should have the property seriesTypeId (base name: "series_type_id")', function() {
-      // uncomment below and update the code to test the property seriesTypeId
-      //var instane = new RtsmunityPublicApiSdk.InlineResponse20015();
-      //expect(instance).to.be();
-    });
-
-    it('should have the property seriesStateId (base name: "series_state_id")', function() {
-      // uncomment below and update the code to test the property seriesStateId
-      //var instane = new RtsmunityPublicApiSdk.InlineResponse20015();
-      //expect(instance).to.be();
-    });
-
-    it('should have the property plannedStart (base name: "planned_start")', function() {
-      // uncomment below and update the code to test the property plannedStart
-      //var instane = new RtsmunityPublicApiSdk.InlineResponse20015();
-      //expect(instance).to.be();
-    });
-
-    it('should have the property winTeamId (base name: "win_team_id")', function() {
-      // uncomment below and update the code to test the property winTeamId
-      //var instane = new RtsmunityPublicApiSdk.InlineResponse20015();
-      //expect(instance).to.be();
-    });
-
-    it('should have the property tournamentId (base name: "tournament_id")', function() {
-      // uncomment below and update the code to test the property tournamentId
+    it('should have the property numberOfMatches (base name: "number_of_matches")', function() {
+      // uncomment below and update the code to test the property numberOfMatches
       //var instane = new RtsmunityPublicApiSdk.InlineResponse20015();
       //expect(instance).to.be();
     });

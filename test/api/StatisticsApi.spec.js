@@ -1,6 +1,6 @@
 /**
  * PULL API
- * REST api for static sport data.  Every resource is protected by an **API key** which must be placed in X-Api-Key reques header:          X-Api-Key: your_api_key  and every request has to be made with client certificate.  
+ * REST api for static sport data.  Every resource is protected by an **API key** which must be placed in X-Api-Key request header:  X-Api-Key: your_api_key  and every request has to be made with client certificate.
  *
  * OpenAPI spec version: 
  * 
@@ -39,7 +39,7 @@
   var instance;
 
   beforeEach(function() {
-    instance = new RtsmunityPublicApiSdk.InlineResponse20018();
+    instance = new RtsmunityPublicApiSdk.StatisticsApi();
   });
 
   var getProperty = function(object, getter, property) {
@@ -58,37 +58,17 @@
       object[property] = value;
   }
 
-  describe('InlineResponse20018', function() {
-    it('should create an instance of InlineResponse20018', function() {
-      // uncomment below and update the code to test InlineResponse20018
-      //var instane = new RtsmunityPublicApiSdk.InlineResponse20018();
-      //expect(instance).to.be.a(RtsmunityPublicApiSdk.InlineResponse20018);
+  describe('StatisticsApi', function() {
+    describe('getStatisticsStates', function() {
+      it('should call getStatisticsStates successfully', function(done) {
+        //uncomment below and update the code to test getStatisticsStates
+        //instance.getStatisticsStates(pet, function(error) {
+        //  if (error) throw error;
+        //expect().to.be();
+        //});
+        done();
+      });
     });
-
-    it('should have the property id (base name: "id")', function() {
-      // uncomment below and update the code to test the property id
-      //var instane = new RtsmunityPublicApiSdk.InlineResponse20018();
-      //expect(instance).to.be();
-    });
-
-    it('should have the property name (base name: "name")', function() {
-      // uncomment below and update the code to test the property name
-      //var instane = new RtsmunityPublicApiSdk.InlineResponse20018();
-      //expect(instance).to.be();
-    });
-
-    it('should have the property shortcut (base name: "shortcut")', function() {
-      // uncomment below and update the code to test the property shortcut
-      //var instane = new RtsmunityPublicApiSdk.InlineResponse20018();
-      //expect(instance).to.be();
-    });
-
-    it('should have the property players (base name: "players")', function() {
-      // uncomment below and update the code to test the property players
-      //var instane = new RtsmunityPublicApiSdk.InlineResponse20018();
-      //expect(instance).to.be();
-    });
-
   });
 
 }));

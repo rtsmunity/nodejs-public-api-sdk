@@ -8,7 +8,7 @@ Name | Type | Description | Notes
 **matchId** | **Number** |  | [optional] 
 **matchStateId** | **Number** |  | [optional] 
 **dateCreated** | **String** |  | [optional] 
-**match** | [**InlineResponse2002**](InlineResponse2002.md) |  | [optional] 
+**match** | [**InlineResponse2004Match**](InlineResponse2004Match.md) |  | [optional] 
 **markets** | [**[InlineResponse2003Markets]**](InlineResponse2003Markets.md) |  | [optional] 
 
 

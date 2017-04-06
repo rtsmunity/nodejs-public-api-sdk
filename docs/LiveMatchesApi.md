@@ -121,11 +121,11 @@ No authorization required
 
 <a name="getMatchStatisticsFeed"></a>
 # **getMatchStatisticsFeed**
-> getMatchStatisticsFeed(id, sport, sport2, sport3, opts)
+> getMatchStatisticsFeed(id, sport, opts)
 
 Match statistics feed
 
-    + Schema         {             \&quot;type\&quot;: \&quot;object\&quot;,             \&quot;properties\&quot;: {                 \&quot;sequence\&quot;: {                     \&quot;type\&quot;: \&quot;number\&quot;                 },                 \&quot;match_time\&quot;: {                     \&quot;type\&quot;: \&quot;number\&quot;                 },                 \&quot;match_id\&quot;: {                     \&quot;type\&quot;: \&quot;number\&quot;                 },                 \&quot;date_created\&quot;: {                     \&quot;type\&quot;: \&quot;string\&quot;                 },                 \&quot;home_is_dark\&quot;: {                     \&quot;type\&quot;: \&quot;boolean\&quot;                 },                 \&quot;round_number\&quot;: {                     \&quot;type\&quot;: \&quot;number\&quot;                 },                 \&quot;map_name\&quot;: {                     \&quot;type\&quot;: \&quot;string\&quot;                 },                 \&quot;home_team\&quot;: {                     \&quot;type\&quot;: \&quot;object\&quot;,                     \&quot;properties\&quot;: {                         \&quot;type\&quot;: \&quot;object\&quot;,                         \&quot;properties\&quot;: {                             \&quot;turrets\&quot;: {                                 \&quot;type\&quot;: \&quot;number\&quot;                             },                             \&quot;towers\&quot;: {                                 \&quot;type\&quot;: \&quot;number\&quot;                             },                             \&quot;round_score\&quot;: {                                 \&quot;type\&quot;: \&quot;number\&quot;                             },                             \&quot;kills\&quot;: {                                 \&quot;type\&quot;: \&quot;number\&quot;                             },                             \&quot;gold\&quot;: {                                 \&quot;type\&quot;: \&quot;number\&quot;                             }                         }                     }                 },                 \&quot;away_team\&quot;: {                     \&quot;type\&quot;: \&quot;object\&quot;,                     \&quot;properties\&quot;: {                         \&quot;type\&quot;: \&quot;object\&quot;,                         \&quot;properties\&quot;: {                             \&quot;turrets\&quot;: {                                 \&quot;type\&quot;: \&quot;number\&quot;                             },                             \&quot;towers\&quot;: {                                 \&quot;type\&quot;: \&quot;number\&quot;                             },                             \&quot;round_score\&quot;: {                                 \&quot;type\&quot;: \&quot;number\&quot;                             },                             \&quot;kills\&quot;: {                                 \&quot;type\&quot;: \&quot;number\&quot;                             },                             \&quot;gold\&quot;: {                                 \&quot;type\&quot;: \&quot;number\&quot;                             }                         }                     }                 }             }         }  
++ Schema         {             \&quot;type\&quot;: \&quot;object\&quot;,             \&quot;properties\&quot;: {                 \&quot;sequence\&quot;: {                     \&quot;type\&quot;: \&quot;number\&quot;                 },                 \&quot;match_time\&quot;: {                     \&quot;type\&quot;: \&quot;number\&quot;                 },                 \&quot;match_id\&quot;: {                     \&quot;type\&quot;: \&quot;number\&quot;                 },                 \&quot;date_created\&quot;: {                     \&quot;type\&quot;: \&quot;string\&quot;                 },                 \&quot;home_is_dark\&quot;: {                     \&quot;type\&quot;: \&quot;boolean\&quot;                 },                 \&quot;round_number\&quot;: {                     \&quot;type\&quot;: \&quot;number\&quot;                 },                 \&quot;map_name\&quot;: {                     \&quot;type\&quot;: \&quot;string\&quot;                 },                 \&quot;home_team\&quot;: {                     \&quot;type\&quot;: \&quot;object\&quot;,                     \&quot;properties\&quot;: {                         \&quot;type\&quot;: \&quot;object\&quot;,                         \&quot;properties\&quot;: {                             \&quot;turrets\&quot;: {                                 \&quot;type\&quot;: \&quot;number\&quot;                             },                             \&quot;towers\&quot;: {                                 \&quot;type\&quot;: \&quot;number\&quot;                             },                             \&quot;round_score\&quot;: {                                 \&quot;type\&quot;: \&quot;number\&quot;                             },                             \&quot;kills\&quot;: {                                 \&quot;type\&quot;: \&quot;number\&quot;                             },                             \&quot;gold\&quot;: {                                 \&quot;type\&quot;: \&quot;number\&quot;                             }                         }                     }                 },                 \&quot;away_team\&quot;: {                     \&quot;type\&quot;: \&quot;object\&quot;,                     \&quot;properties\&quot;: {                         \&quot;type\&quot;: \&quot;object\&quot;,                         \&quot;properties\&quot;: {                             \&quot;turrets\&quot;: {                                 \&quot;type\&quot;: \&quot;number\&quot;                             },                             \&quot;towers\&quot;: {                                 \&quot;type\&quot;: \&quot;number\&quot;                             },                             \&quot;round_score\&quot;: {                                 \&quot;type\&quot;: \&quot;number\&quot;                             },                             \&quot;kills\&quot;: {                                 \&quot;type\&quot;: \&quot;number\&quot;                             },                             \&quot;gold\&quot;: {                                 \&quot;type\&quot;: \&quot;number\&quot;                             }                         }                     }                 }             }         }
 
 ### Example
 ```javascript
@@ -136,10 +136,6 @@ var apiInstance = new RtsmunityPublicApiSdk.LiveMatchesApi();
 var id = 3.4; // Number | ID of the match in the form of an integer
 
 var sport = "sport_example"; // String | Sport key
-
-var sport2 = "sport_example"; // String | Sport key
-
-var sport3 = "sport_example"; // String | Sport key
 
 var opts = { 
   'sequence': 3.4 // Number | Sequence number for filtering states
@@ -152,7 +148,7 @@ var callback = function(error, data, response) {
     console.log('API called successfully.');
   }
 };
-apiInstance.getMatchStatisticsFeed(id, sport, sport2, sport3, opts, callback);
+apiInstance.getMatchStatisticsFeed(id, sport, opts, callback);
 ```
 
 ### Parameters
@@ -161,8 +157,6 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **id** | **Number**| ID of the match in the form of an integer | 
  **sport** | **String**| Sport key | 
- **sport2** | **String**| Sport key | 
- **sport3** | **String**| Sport key | 
  **sequence** | **Number**| Sequence number for filtering states | [optional] 
 
 ### Return type
@@ -180,11 +174,11 @@ No authorization required
 
 <a name="getMatchStatisticsState"></a>
 # **getMatchStatisticsState**
-> getMatchStatisticsState(id, sport, sport2, sport3, opts)
+> getMatchStatisticsState(id, sport, opts)
 
 Match statistics state
 
-    + Schema         {             \&quot;type\&quot;: \&quot;object\&quot;,             \&quot;properties\&quot;: {                 \&quot;sequence\&quot;: {                     \&quot;type\&quot;: \&quot;number\&quot;                 },                 \&quot;match_time\&quot;: {                     \&quot;type\&quot;: \&quot;number\&quot;                 },                 \&quot;match_id\&quot;: {                     \&quot;type\&quot;: \&quot;number\&quot;                 },                 \&quot;date_created\&quot;: {                     \&quot;type\&quot;: \&quot;string\&quot;                 },                 \&quot;home_is_dark\&quot;: {                     \&quot;type\&quot;: \&quot;boolean\&quot;                 },                 \&quot;round_number\&quot;: {                     \&quot;type\&quot;: \&quot;number\&quot;                 },                 \&quot;map_name\&quot;: {                     \&quot;type\&quot;: \&quot;string\&quot;                 },                 \&quot;home_team\&quot;: {                     \&quot;type\&quot;: \&quot;object\&quot;,                     \&quot;properties\&quot;: {                         \&quot;type\&quot;: \&quot;object\&quot;,                         \&quot;properties\&quot;: {                             \&quot;turrets\&quot;: {                                 \&quot;type\&quot;: \&quot;number\&quot;                             },                             \&quot;towers\&quot;: {                                 \&quot;type\&quot;: \&quot;number\&quot;                             },                             \&quot;round_score\&quot;: {                                 \&quot;type\&quot;: \&quot;number\&quot;                             },                             \&quot;kills\&quot;: {                                 \&quot;type\&quot;: \&quot;number\&quot;                             },                             \&quot;gold\&quot;: {                                 \&quot;type\&quot;: \&quot;number\&quot;                             }                         }                     }                 },                 \&quot;away_team\&quot;: {                     \&quot;type\&quot;: \&quot;object\&quot;,                     \&quot;properties\&quot;: {                         \&quot;type\&quot;: \&quot;object\&quot;,                         \&quot;properties\&quot;: {                             \&quot;turrets\&quot;: {                                 \&quot;type\&quot;: \&quot;number\&quot;                             },                             \&quot;towers\&quot;: {                                 \&quot;type\&quot;: \&quot;number\&quot;                             },                             \&quot;round_score\&quot;: {                                 \&quot;type\&quot;: \&quot;number\&quot;                             },                             \&quot;kills\&quot;: {                                 \&quot;type\&quot;: \&quot;number\&quot;                             },                             \&quot;gold\&quot;: {                                 \&quot;type\&quot;: \&quot;number\&quot;                             }                         }                     }                 }             }         }  
++ Schema         {             \&quot;type\&quot;: \&quot;object\&quot;,             \&quot;properties\&quot;: {                 \&quot;sequence\&quot;: {                     \&quot;type\&quot;: \&quot;number\&quot;                 },                 \&quot;match_time\&quot;: {                     \&quot;type\&quot;: \&quot;number\&quot;                 },                 \&quot;match_id\&quot;: {                     \&quot;type\&quot;: \&quot;number\&quot;                 },                 \&quot;date_created\&quot;: {                     \&quot;type\&quot;: \&quot;string\&quot;                 },                 \&quot;home_is_dark\&quot;: {                     \&quot;type\&quot;: \&quot;boolean\&quot;                 },                 \&quot;round_number\&quot;: {                     \&quot;type\&quot;: \&quot;number\&quot;                 },                 \&quot;map_name\&quot;: {                     \&quot;type\&quot;: \&quot;string\&quot;                 },                 \&quot;home_team\&quot;: {                     \&quot;type\&quot;: \&quot;object\&quot;,                     \&quot;properties\&quot;: {                         \&quot;type\&quot;: \&quot;object\&quot;,                         \&quot;properties\&quot;: {                             \&quot;turrets\&quot;: {                                 \&quot;type\&quot;: \&quot;number\&quot;                             },                             \&quot;towers\&quot;: {                                 \&quot;type\&quot;: \&quot;number\&quot;                             },                             \&quot;round_score\&quot;: {                                 \&quot;type\&quot;: \&quot;number\&quot;                             },                             \&quot;kills\&quot;: {                                 \&quot;type\&quot;: \&quot;number\&quot;                             },                             \&quot;gold\&quot;: {                                 \&quot;type\&quot;: \&quot;number\&quot;                             }                         }                     }                 },                 \&quot;away_team\&quot;: {                     \&quot;type\&quot;: \&quot;object\&quot;,                     \&quot;properties\&quot;: {                         \&quot;type\&quot;: \&quot;object\&quot;,                         \&quot;properties\&quot;: {                             \&quot;turrets\&quot;: {                                 \&quot;type\&quot;: \&quot;number\&quot;                             },                             \&quot;towers\&quot;: {                                 \&quot;type\&quot;: \&quot;number\&quot;                             },                             \&quot;round_score\&quot;: {                                 \&quot;type\&quot;: \&quot;number\&quot;                             },                             \&quot;kills\&quot;: {                                 \&quot;type\&quot;: \&quot;number\&quot;                             },                             \&quot;gold\&quot;: {                                 \&quot;type\&quot;: \&quot;number\&quot;                             }                         }                     }                 }             }         }
 
 ### Example
 ```javascript
@@ -195,10 +189,6 @@ var apiInstance = new RtsmunityPublicApiSdk.LiveMatchesApi();
 var id = 3.4; // Number | ID of the match in the form of an integer
 
 var sport = "sport_example"; // String | Sport key
-
-var sport2 = "sport_example"; // String | Sport key
-
-var sport3 = "sport_example"; // String | Sport key
 
 var opts = { 
   'sequence': 3.4, // Number | Sequence number for filtering
@@ -212,7 +202,7 @@ var callback = function(error, data, response) {
     console.log('API called successfully.');
   }
 };
-apiInstance.getMatchStatisticsState(id, sport, sport2, sport3, opts, callback);
+apiInstance.getMatchStatisticsState(id, sport, opts, callback);
 ```
 
 ### Parameters
@@ -221,8 +211,6 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **id** | **Number**| ID of the match in the form of an integer | 
  **sport** | **String**| Sport key | 
- **sport2** | **String**| Sport key | 
- **sport3** | **String**| Sport key | 
  **sequence** | **Number**| Sequence number for filtering | [optional] 
  **expand** | **String**| Expand match detail | [optional] 
 

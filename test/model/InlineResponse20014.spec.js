@@ -1,6 +1,6 @@
 /**
  * PULL API
- * REST api for static sport data.  Every resource is protected by an **API key** which must be placed in X-Api-Key reques header:          X-Api-Key: your_api_key  and every request has to be made with client certificate.  
+ * REST api for static sport data.  Every resource is protected by an **API key** which must be placed in X-Api-Key request header:  X-Api-Key: your_api_key  and every request has to be made with client certificate.
  *
  * OpenAPI spec version: 
  * 
@@ -71,26 +71,8 @@
       //expect(instance).to.be();
     });
 
-    it('should have the property teamId (base name: "team_id")', function() {
-      // uncomment below and update the code to test the property teamId
-      //var instane = new RtsmunityPublicApiSdk.InlineResponse20014();
-      //expect(instance).to.be();
-    });
-
-    it('should have the property firstName (base name: "first_name")', function() {
-      // uncomment below and update the code to test the property firstName
-      //var instane = new RtsmunityPublicApiSdk.InlineResponse20014();
-      //expect(instance).to.be();
-    });
-
-    it('should have the property lastName (base name: "last_name")', function() {
-      // uncomment below and update the code to test the property lastName
-      //var instane = new RtsmunityPublicApiSdk.InlineResponse20014();
-      //expect(instance).to.be();
-    });
-
-    it('should have the property nickname (base name: "nickname")', function() {
-      // uncomment below and update the code to test the property nickname
+    it('should have the property state (base name: "state")', function() {
+      // uncomment below and update the code to test the property state
       //var instane = new RtsmunityPublicApiSdk.InlineResponse20014();
       //expect(instance).to.be();
     });

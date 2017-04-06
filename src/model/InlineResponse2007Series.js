@@ -34,7 +34,7 @@
     if (!root.RtsmunityPublicApiSdk) {
       root.RtsmunityPublicApiSdk = {};
     }
-    root.RtsmunityPublicApiSdk.InlineResponse2009 = factory(root.RtsmunityPublicApiSdk.ApiClient);
+    root.RtsmunityPublicApiSdk.InlineResponse2007Series = factory(root.RtsmunityPublicApiSdk.ApiClient);
   }
 }(this, function(ApiClient) {
   'use strict';
@@ -43,14 +43,14 @@
 
 
   /**
-   * The InlineResponse2009 model module.
-   * @module model/InlineResponse2009
+   * The InlineResponse2007Series model module.
+   * @module model/InlineResponse2007Series
    * @version 1.0.0
    */
 
   /**
-   * Constructs a new <code>InlineResponse2009</code>.
-   * @alias module:model/InlineResponse2009
+   * Constructs a new <code>InlineResponse2007Series</code>.
+   * @alias module:model/InlineResponse2007Series
    * @class
    */
   var exports = function() {
@@ -58,37 +58,77 @@
 
 
 
+
+
+
+
+
   };
 
   /**
-   * Constructs a <code>InlineResponse2009</code> from a plain JavaScript object, optionally creating a new instance.
+   * Constructs a <code>InlineResponse2007Series</code> from a plain JavaScript object, optionally creating a new instance.
    * Copies all relevant properties from <code>data</code> to <code>obj</code> if supplied or a new instance if not.
    * @param {Object} data The plain JavaScript object bearing properties of interest.
-   * @param {module:model/InlineResponse2009} obj Optional instance to populate.
-   * @return {module:model/InlineResponse2009} The populated <code>InlineResponse2009</code> instance.
+   * @param {module:model/InlineResponse2007Series} obj Optional instance to populate.
+   * @return {module:model/InlineResponse2007Series} The populated <code>InlineResponse2007Series</code> instance.
    */
   exports.constructFromObject = function(data, obj) {
     if (data) {
       obj = obj || new exports();
 
+      if (data.hasOwnProperty('home_team_id')) {
+        obj['home_team_id'] = ApiClient.convertToType(data['home_team_id'], 'Number');
+      }
+      if (data.hasOwnProperty('away_team_id')) {
+        obj['away_team_id'] = ApiClient.convertToType(data['away_team_id'], 'Number');
+      }
+      if (data.hasOwnProperty('series_type_id')) {
+        obj['series_type_id'] = ApiClient.convertToType(data['series_type_id'], 'Number');
+      }
+      if (data.hasOwnProperty('series_state_id')) {
+        obj['series_state_id'] = ApiClient.convertToType(data['series_state_id'], 'Number');
+      }
       if (data.hasOwnProperty('id')) {
         obj['id'] = ApiClient.convertToType(data['id'], 'Number');
       }
-      if (data.hasOwnProperty('name')) {
-        obj['name'] = ApiClient.convertToType(data['name'], 'String');
+      if (data.hasOwnProperty('planned_start')) {
+        obj['planned_start'] = ApiClient.convertToType(data['planned_start'], 'String');
+      }
+      if (data.hasOwnProperty('tournament_id')) {
+        obj['tournament_id'] = ApiClient.convertToType(data['tournament_id'], 'Number');
       }
     }
     return obj;
   }
 
   /**
+   * @member {Number} home_team_id
+   */
+  exports.prototype['home_team_id'] = undefined;
+  /**
+   * @member {Number} away_team_id
+   */
+  exports.prototype['away_team_id'] = undefined;
+  /**
+   * @member {Number} series_type_id
+   */
+  exports.prototype['series_type_id'] = undefined;
+  /**
+   * @member {Number} series_state_id
+   */
+  exports.prototype['series_state_id'] = undefined;
+  /**
    * @member {Number} id
    */
   exports.prototype['id'] = undefined;
   /**
-   * @member {String} name
+   * @member {String} planned_start
    */
-  exports.prototype['name'] = undefined;
+  exports.prototype['planned_start'] = undefined;
+  /**
+   * @member {Number} tournament_id
+   */
+  exports.prototype['tournament_id'] = undefined;
 
 
 

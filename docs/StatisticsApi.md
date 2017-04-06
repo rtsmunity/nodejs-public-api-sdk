@@ -1,17 +1,17 @@
-# RtsmunityPublicApiSdk.TeamsApi
+# RtsmunityPublicApiSdk.StatisticsApi
 
 All URIs are relative to *https://localhost*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**getTeams**](TeamsApi.md#getTeams) | **GET** /{sport}/teams | List All Teams
+[**getStatisticsStates**](StatisticsApi.md#getStatisticsStates) | **GET** /{sport}/statistics/states | List All Statistics states
 
 
-<a name="getTeams"></a>
-# **getTeams**
-> [InlineResponse20016] getTeams(sport)
+<a name="getStatisticsStates"></a>
+# **getStatisticsStates**
+> [InlineResponse20014] getStatisticsStates(sport)
 
-List All Teams
+List All Statistics states
 
 
 
@@ -19,7 +19,7 @@ List All Teams
 ```javascript
 var RtsmunityPublicApiSdk = require('rtsmunity-public-api-sdk');
 
-var apiInstance = new RtsmunityPublicApiSdk.TeamsApi();
+var apiInstance = new RtsmunityPublicApiSdk.StatisticsApi();
 
 var sport = "sport_example"; // String | Sport key
 
@@ -31,7 +31,7 @@ var callback = function(error, data, response) {
     console.log('API called successfully. Returned data: ' + data);
   }
 };
-apiInstance.getTeams(sport, callback);
+apiInstance.getStatisticsStates(sport, callback);
 ```
 
 ### Parameters
@@ -42,7 +42,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**[InlineResponse20016]**](InlineResponse20016.md)
+[**[InlineResponse20014]**](InlineResponse20014.md)
 
 ### Authorization
 
@@ -51,5 +51,5 @@ No authorization required
 ### HTTP request headers
 
  - **Content-Type**: Not defined
- - **Accept**: application/json; charset=utf-8
+ - **Accept**: Not defined
 

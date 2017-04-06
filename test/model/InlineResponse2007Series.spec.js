@@ -39,7 +39,7 @@
   var instance;
 
   beforeEach(function() {
-    instance = new RtsmunityPublicApiSdk.InlineResponse2007();
+    instance = new RtsmunityPublicApiSdk.InlineResponse2007Series();
   });
 
   var getProperty = function(object, getter, property) {
@@ -58,46 +58,52 @@
       object[property] = value;
   }
 
-  describe('InlineResponse2007', function() {
-    it('should create an instance of InlineResponse2007', function() {
-      // uncomment below and update the code to test InlineResponse2007
-      //var instane = new RtsmunityPublicApiSdk.InlineResponse2007();
-      //expect(instance).to.be.a(RtsmunityPublicApiSdk.InlineResponse2007);
+  describe('InlineResponse2007Series', function() {
+    it('should create an instance of InlineResponse2007Series', function() {
+      // uncomment below and update the code to test InlineResponse2007Series
+      //var instane = new RtsmunityPublicApiSdk.InlineResponse2007Series();
+      //expect(instance).to.be.a(RtsmunityPublicApiSdk.InlineResponse2007Series);
     });
 
-    it('should have the property sequence (base name: "sequence")', function() {
-      // uncomment below and update the code to test the property sequence
-      //var instane = new RtsmunityPublicApiSdk.InlineResponse2007();
+    it('should have the property homeTeamId (base name: "home_team_id")', function() {
+      // uncomment below and update the code to test the property homeTeamId
+      //var instane = new RtsmunityPublicApiSdk.InlineResponse2007Series();
       //expect(instance).to.be();
     });
 
-    it('should have the property seriesId (base name: "series_id")', function() {
-      // uncomment below and update the code to test the property seriesId
-      //var instane = new RtsmunityPublicApiSdk.InlineResponse2007();
+    it('should have the property awayTeamId (base name: "away_team_id")', function() {
+      // uncomment below and update the code to test the property awayTeamId
+      //var instane = new RtsmunityPublicApiSdk.InlineResponse2007Series();
+      //expect(instance).to.be();
+    });
+
+    it('should have the property seriesTypeId (base name: "series_type_id")', function() {
+      // uncomment below and update the code to test the property seriesTypeId
+      //var instane = new RtsmunityPublicApiSdk.InlineResponse2007Series();
       //expect(instance).to.be();
     });
 
     it('should have the property seriesStateId (base name: "series_state_id")', function() {
       // uncomment below and update the code to test the property seriesStateId
-      //var instane = new RtsmunityPublicApiSdk.InlineResponse2007();
+      //var instane = new RtsmunityPublicApiSdk.InlineResponse2007Series();
       //expect(instance).to.be();
     });
 
-    it('should have the property dateCreated (base name: "date_created")', function() {
-      // uncomment below and update the code to test the property dateCreated
-      //var instane = new RtsmunityPublicApiSdk.InlineResponse2007();
+    it('should have the property id (base name: "id")', function() {
+      // uncomment below and update the code to test the property id
+      //var instane = new RtsmunityPublicApiSdk.InlineResponse2007Series();
       //expect(instance).to.be();
     });
 
-    it('should have the property series (base name: "series")', function() {
-      // uncomment below and update the code to test the property series
-      //var instane = new RtsmunityPublicApiSdk.InlineResponse2007();
+    it('should have the property plannedStart (base name: "planned_start")', function() {
+      // uncomment below and update the code to test the property plannedStart
+      //var instane = new RtsmunityPublicApiSdk.InlineResponse2007Series();
       //expect(instance).to.be();
     });
 
-    it('should have the property markets (base name: "markets")', function() {
-      // uncomment below and update the code to test the property markets
-      //var instane = new RtsmunityPublicApiSdk.InlineResponse2007();
+    it('should have the property tournamentId (base name: "tournament_id")', function() {
+      // uncomment below and update the code to test the property tournamentId
+      //var instane = new RtsmunityPublicApiSdk.InlineResponse2007Series();
       //expect(instance).to.be();
     });
 

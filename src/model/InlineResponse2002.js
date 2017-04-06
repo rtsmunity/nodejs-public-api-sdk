@@ -1,6 +1,6 @@
 /**
  * PULL API
- * REST api for static sport data.  Every resource is protected by an **API key** which must be placed in X-Api-Key reques header:          X-Api-Key: your_api_key  and every request has to be made with client certificate.  
+ * REST api for static sport data.  Every resource is protected by an **API key** which must be placed in X-Api-Key request header:  X-Api-Key: your_api_key  and every request has to be made with client certificate.
  *
  * OpenAPI spec version: 
  * 
@@ -67,6 +67,7 @@
 
 
 
+
   };
 
   /**
@@ -112,6 +113,9 @@
       }
       if (data.hasOwnProperty('match_state_id')) {
         obj['match_state_id'] = ApiClient.convertToType(data['match_state_id'], 'Number');
+      }
+      if (data.hasOwnProperty('presentation_url')) {
+        obj['presentation_url'] = ApiClient.convertToType(data['presentation_url'], 'String');
       }
     }
     return obj;
@@ -161,6 +165,10 @@
    * @member {Number} match_state_id
    */
   exports.prototype['match_state_id'] = undefined;
+  /**
+   * @member {String} presentation_url
+   */
+  exports.prototype['presentation_url'] = undefined;
 
 
 

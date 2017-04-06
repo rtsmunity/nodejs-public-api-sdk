@@ -1,15 +1,14 @@
-# RtsmunityPublicApiSdk.InlineResponse20013
+# RtsmunityPublicApiSdk.InlineResponse2007Series
 
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**id** | **Number** |  | [optional] 
 **homeTeamId** | **Number** |  | [optional] 
 **awayTeamId** | **Number** |  | [optional] 
 **seriesTypeId** | **Number** |  | [optional] 
 **seriesStateId** | **Number** |  | [optional] 
+**id** | **Number** |  | [optional] 
 **plannedStart** | **String** |  | [optional] 
-**winTeamId** | **Number** |  | [optional] 
 **tournamentId** | **Number** |  | [optional] 
 
 

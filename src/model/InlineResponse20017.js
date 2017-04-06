@@ -1,6 +1,6 @@
 /**
  * PULL API
- * REST api for static sport data.  Every resource is protected by an **API key** which must be placed in X-Api-Key reques header:          X-Api-Key: your_api_key  and every request has to be made with client certificate.  
+ * REST api for static sport data.  Every resource is protected by an **API key** which must be placed in X-Api-Key request header:  X-Api-Key: your_api_key  and every request has to be made with client certificate.
  *
  * OpenAPI spec version: 
  * 
@@ -59,6 +59,11 @@
 
 
 
+
+
+
+
+
   };
 
   /**
@@ -78,8 +83,23 @@
       if (data.hasOwnProperty('name')) {
         obj['name'] = ApiClient.convertToType(data['name'], 'String');
       }
-      if (data.hasOwnProperty('number_of_matches')) {
-        obj['number_of_matches'] = ApiClient.convertToType(data['number_of_matches'], 'Number');
+      if (data.hasOwnProperty('shortcut')) {
+        obj['shortcut'] = ApiClient.convertToType(data['shortcut'], 'String');
+      }
+      if (data.hasOwnProperty('description')) {
+        obj['description'] = ApiClient.convertToType(data['description'], 'String');
+      }
+      if (data.hasOwnProperty('date_from')) {
+        obj['date_from'] = ApiClient.convertToType(data['date_from'], 'String');
+      }
+      if (data.hasOwnProperty('date_to')) {
+        obj['date_to'] = ApiClient.convertToType(data['date_to'], 'String');
+      }
+      if (data.hasOwnProperty('league_id')) {
+        obj['league_id'] = ApiClient.convertToType(data['league_id'], 'Number');
+      }
+      if (data.hasOwnProperty('teams')) {
+        obj['teams'] = ApiClient.convertToType(data['teams'], ['Number']);
       }
     }
     return obj;
@@ -94,9 +114,29 @@
    */
   exports.prototype['name'] = undefined;
   /**
-   * @member {Number} number_of_matches
+   * @member {String} shortcut
    */
-  exports.prototype['number_of_matches'] = undefined;
+  exports.prototype['shortcut'] = undefined;
+  /**
+   * @member {String} description
+   */
+  exports.prototype['description'] = undefined;
+  /**
+   * @member {String} date_from
+   */
+  exports.prototype['date_from'] = undefined;
+  /**
+   * @member {String} date_to
+   */
+  exports.prototype['date_to'] = undefined;
+  /**
+   * @member {Number} league_id
+   */
+  exports.prototype['league_id'] = undefined;
+  /**
+   * @member {Array.<Number>} teams
+   */
+  exports.prototype['teams'] = undefined;
 
 
 

@@ -7,7 +7,7 @@ Name | Type | Description | Notes
 **seriesId** | **Number** |  | [optional] 
 **seriesStateId** | **Number** |  | [optional] 
 **dateCreated** | **String** |  | [optional] 
-**series** | [**InlineResponse2005**](InlineResponse2005.md) |  | [optional] 
+**series** | [**InlineResponse2007Series**](InlineResponse2007Series.md) |  | [optional] 
 **markets** | [**[InlineResponse2003Markets]**](InlineResponse2003Markets.md) |  | [optional] 
 
 

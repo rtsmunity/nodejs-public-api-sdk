@@ -1,4 +1,4 @@
-# RtsmunityPublicApiSdk.InlineResponse20011
+# RtsmunityPublicApiSdk.InlineResponse2004Match
 
 ## Properties
 Name | Type | Description | Notes
@@ -12,6 +12,6 @@ Name | Type | Description | Notes
 **seriesId** | **Number** |  | [optional] 
 **tournamentId** | **Number** |  | [optional] 
 **leagueId** | **Number** |  | [optional] 
-**winTeamId** | **Number** |  | [optional] 
+**matchStateId** | **Number** |  | [optional] 
 
 

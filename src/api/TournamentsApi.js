@@ -1,6 +1,6 @@
 /**
  * PULL API
- * REST api for static sport data.  Every resource is protected by an **API key** which must be placed in X-Api-Key reques header:          X-Api-Key: your_api_key  and every request has to be made with client certificate.  
+ * REST api for static sport data.  Every resource is protected by an **API key** which must be placed in X-Api-Key request header:  X-Api-Key: your_api_key  and every request has to be made with client certificate.
  *
  * OpenAPI spec version: 
  * 
@@ -25,18 +25,18 @@
 (function(root, factory) {
   if (typeof define === 'function' && define.amd) {
     // AMD. Register as an anonymous module.
-    define(['ApiClient', 'model/InlineResponse20019'], factory);
+    define(['ApiClient', 'model/InlineResponse20017'], factory);
   } else if (typeof module === 'object' && module.exports) {
     // CommonJS-like environments that support module.exports, like Node.
-    module.exports = factory(require('../ApiClient'), require('../model/InlineResponse20019'));
+    module.exports = factory(require('../ApiClient'), require('../model/InlineResponse20017'));
   } else {
     // Browser globals (root is window)
     if (!root.RtsmunityPublicApiSdk) {
       root.RtsmunityPublicApiSdk = {};
     }
-    root.RtsmunityPublicApiSdk.TournamentsApi = factory(root.RtsmunityPublicApiSdk.ApiClient, root.RtsmunityPublicApiSdk.InlineResponse20019);
+    root.RtsmunityPublicApiSdk.TournamentsApi = factory(root.RtsmunityPublicApiSdk.ApiClient, root.RtsmunityPublicApiSdk.InlineResponse20017);
   }
-}(this, function(ApiClient, InlineResponse20019) {
+}(this, function(ApiClient, InlineResponse20017) {
   'use strict';
 
   /**
@@ -60,7 +60,7 @@
      * Callback function to receive the result of the getTournaments operation.
      * @callback module:api/TournamentsApi~getTournamentsCallback
      * @param {String} error Error message, if any.
-     * @param {Array.<module:model/InlineResponse20019>} data The data returned by the service call.
+     * @param {Array.<module:model/InlineResponse20017>} data The data returned by the service call.
      * @param {String} response The complete HTTP response.
      */
 
@@ -72,7 +72,7 @@
      * @param {String} opts.dateFrom Date to which filter tournaments
      * @param {String} opts.dateTo Date to which filter tournaments
      * @param {module:api/TournamentsApi~getTournamentsCallback} callback The callback function, accepting three arguments: error, data, response
-     * data is of type: {@link Array.<module:model/InlineResponse20019>}
+     * data is of type: {@link Array.<module:model/InlineResponse20017>}
      */
     this.getTournaments = function(sport, opts, callback) {
       opts = opts || {};
@@ -99,7 +99,7 @@
       var authNames = [];
       var contentTypes = [];
       var accepts = ['application/json; charset=utf-8'];
-      var returnType = [InlineResponse20019];
+      var returnType = [InlineResponse20017];
 
       return this.apiClient.callApi(
         '/{sport}/tournaments', 'GET',

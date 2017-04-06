@@ -11,7 +11,7 @@ Method | HTTP request | Description
 
 <a name="getMatchPositions"></a>
 # **getMatchPositions**
-> [InlineResponse20012] getMatchPositions(sport)
+> [InlineResponse2009] getMatchPositions(sport)
 
 List All Match positions
 
@@ -44,7 +44,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**[InlineResponse20012]**](InlineResponse20012.md)
+[**[InlineResponse2009]**](InlineResponse2009.md)
 
 ### Authorization
 
@@ -57,7 +57,7 @@ No authorization required
 
 <a name="getMatchStates"></a>
 # **getMatchStates**
-> [InlineResponse20010] getMatchStates(sport)
+> [InlineResponse2009] getMatchStates(sport)
 
 List All Matches states
 
@@ -90,7 +90,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**[InlineResponse20010]**](InlineResponse20010.md)
+[**[InlineResponse2009]**](InlineResponse2009.md)
 
 ### Authorization
 
@@ -103,7 +103,7 @@ No authorization required
 
 <a name="getMatches"></a>
 # **getMatches**
-> [InlineResponse20013] getMatches(sport, opts)
+> [InlineResponse20011] getMatches(sport, opts)
 
 List All Matches in Series
 
@@ -144,7 +144,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**[InlineResponse20013]**](InlineResponse20013.md)
+[**[InlineResponse20011]**](InlineResponse20011.md)
 
 ### Authorization
 

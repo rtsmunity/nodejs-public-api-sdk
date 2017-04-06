@@ -1,6 +1,6 @@
 /**
  * PULL API
- * REST api for static sport data.  Every resource is protected by an **API key** which must be placed in X-Api-Key reques header:          X-Api-Key: your_api_key  and every request has to be made with client certificate.  
+ * REST api for static sport data.  Every resource is protected by an **API key** which must be placed in X-Api-Key request header:  X-Api-Key: your_api_key  and every request has to be made with client certificate.
  *
  * OpenAPI spec version: 
  * 
@@ -73,18 +73,6 @@
 
     it('should have the property name (base name: "name")', function() {
       // uncomment below and update the code to test the property name
-      //var instane = new RtsmunityPublicApiSdk.InlineResponse2009();
-      //expect(instance).to.be();
-    });
-
-    it('should have the property lowerBound (base name: "lower_bound")', function() {
-      // uncomment below and update the code to test the property lowerBound
-      //var instane = new RtsmunityPublicApiSdk.InlineResponse2009();
-      //expect(instance).to.be();
-    });
-
-    it('should have the property upperBound (base name: "upper_bound")', function() {
-      // uncomment below and update the code to test the property upperBound
       //var instane = new RtsmunityPublicApiSdk.InlineResponse2009();
       //expect(instance).to.be();
     });

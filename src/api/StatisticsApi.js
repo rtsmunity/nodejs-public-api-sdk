@@ -25,29 +25,29 @@
 (function(root, factory) {
   if (typeof define === 'function' && define.amd) {
     // AMD. Register as an anonymous module.
-    define(['ApiClient', 'model/InlineResponse20012'], factory);
+    define(['ApiClient', 'model/InlineResponse20014'], factory);
   } else if (typeof module === 'object' && module.exports) {
     // CommonJS-like environments that support module.exports, like Node.
-    module.exports = factory(require('../ApiClient'), require('../model/InlineResponse20012'));
+    module.exports = factory(require('../ApiClient'), require('../model/InlineResponse20014'));
   } else {
     // Browser globals (root is window)
     if (!root.RtsmunityPublicApiSdk) {
       root.RtsmunityPublicApiSdk = {};
     }
-    root.RtsmunityPublicApiSdk.PlayersApi = factory(root.RtsmunityPublicApiSdk.ApiClient, root.RtsmunityPublicApiSdk.InlineResponse20012);
+    root.RtsmunityPublicApiSdk.StatisticsApi = factory(root.RtsmunityPublicApiSdk.ApiClient, root.RtsmunityPublicApiSdk.InlineResponse20014);
   }
-}(this, function(ApiClient, InlineResponse20012) {
+}(this, function(ApiClient, InlineResponse20014) {
   'use strict';
 
   /**
-   * Players service.
-   * @module api/PlayersApi
+   * Statistics service.
+   * @module api/StatisticsApi
    * @version 1.0.0
    */
 
   /**
-   * Constructs a new PlayersApi. 
-   * @alias module:api/PlayersApi
+   * Constructs a new StatisticsApi. 
+   * @alias module:api/StatisticsApi
    * @class
    * @param {module:ApiClient} apiClient Optional API client implementation to use,
    * default to {@link module:ApiClient#instance} if unspecified.
@@ -57,29 +57,26 @@
 
 
     /**
-     * Callback function to receive the result of the getPlayers operation.
-     * @callback module:api/PlayersApi~getPlayersCallback
+     * Callback function to receive the result of the getStatisticsStates operation.
+     * @callback module:api/StatisticsApi~getStatisticsStatesCallback
      * @param {String} error Error message, if any.
-     * @param {Array.<module:model/InlineResponse20012>} data The data returned by the service call.
+     * @param {Array.<module:model/InlineResponse20014>} data The data returned by the service call.
      * @param {String} response The complete HTTP response.
      */
 
     /**
-     * List All Players
+     * List All Statistics states
      * 
      * @param {String} sport Sport key
-     * @param {Object} opts Optional parameters
-     * @param {Number} opts.teamId Filter players by team id
-     * @param {module:api/PlayersApi~getPlayersCallback} callback The callback function, accepting three arguments: error, data, response
-     * data is of type: {@link Array.<module:model/InlineResponse20012>}
+     * @param {module:api/StatisticsApi~getStatisticsStatesCallback} callback The callback function, accepting three arguments: error, data, response
+     * data is of type: {@link Array.<module:model/InlineResponse20014>}
      */
-    this.getPlayers = function(sport, opts, callback) {
-      opts = opts || {};
+    this.getStatisticsStates = function(sport, callback) {
       var postBody = null;
 
       // verify the required parameter 'sport' is set
       if (sport == undefined || sport == null) {
-        throw "Missing the required parameter 'sport' when calling getPlayers";
+        throw "Missing the required parameter 'sport' when calling getStatisticsStates";
       }
 
 
@@ -87,7 +84,6 @@
         'sport': sport
       };
       var queryParams = {
-        'team_id': opts['teamId']
       };
       var headerParams = {
       };
@@ -96,11 +92,11 @@
 
       var authNames = [];
       var contentTypes = [];
-      var accepts = ['application/json; charset=utf-8'];
-      var returnType = [InlineResponse20012];
+      var accepts = [];
+      var returnType = [InlineResponse20014];
 
       return this.apiClient.callApi(
-        '/{sport}/players', 'GET',
+        '/{sport}/statistics/states', 'GET',
         pathParams, queryParams, headerParams, formParams, postBody,
         authNames, contentTypes, accepts, returnType, callback
       );

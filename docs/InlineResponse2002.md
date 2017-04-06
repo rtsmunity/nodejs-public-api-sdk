@@ -14,5 +14,6 @@ Name | Type | Description | Notes
 **leagueId** | **Number** |  | [optional] 
 **winTeamId** | **Number** |  | [optional] 
 **matchStateId** | **Number** |  | [optional] 
+**presentationUrl** | **String** |  | [optional] 
 
 
