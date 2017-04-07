@@ -113,6 +113,12 @@
       //expect(instance).to.be();
     });
 
+    it('should have the property prematchOnly (base name: "prematch_only")', function() {
+      // uncomment below and update the code to test the property prematchOnly
+      //var instane = new RtsmunityPublicApiSdk.InlineResponse2005();
+      //expect(instance).to.be();
+    });
+
   });
 
 }));

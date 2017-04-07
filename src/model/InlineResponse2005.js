@@ -64,6 +64,7 @@
 
 
 
+
   };
 
   /**
@@ -101,6 +102,9 @@
       if (data.hasOwnProperty('tournament_id')) {
         obj['tournament_id'] = ApiClient.convertToType(data['tournament_id'], 'Number');
       }
+      if (data.hasOwnProperty('prematch_only')) {
+        obj['prematch_only'] = ApiClient.convertToType(data['prematch_only'], 'Boolean');
+      }
     }
     return obj;
   }
@@ -137,6 +141,10 @@
    * @member {Number} tournament_id
    */
   exports.prototype['tournament_id'] = undefined;
+  /**
+   * @member {Boolean} prematch_only
+   */
+  exports.prototype['prematch_only'] = undefined;
 
 
 

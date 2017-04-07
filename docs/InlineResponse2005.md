@@ -11,5 +11,6 @@ Name | Type | Description | Notes
 **plannedStart** | **String** |  | [optional] 
 **winTeamId** | **Number** |  | [optional] 
 **tournamentId** | **Number** |  | [optional] 
+**prematchOnly** | **Boolean** |  | [optional] 
 
 
