@@ -25,18 +25,18 @@
 (function(root, factory) {
   if (typeof define === 'function' && define.amd) {
     // AMD. Register as an anonymous module.
-    define(['ApiClient', 'model/InlineResponse20014'], factory);
+    define(['ApiClient', 'model/InlineResponse20016'], factory);
   } else if (typeof module === 'object' && module.exports) {
     // CommonJS-like environments that support module.exports, like Node.
-    module.exports = factory(require('../ApiClient'), require('../model/InlineResponse20014'));
+    module.exports = factory(require('../ApiClient'), require('../model/InlineResponse20016'));
   } else {
     // Browser globals (root is window)
     if (!root.RtsmunityPublicApiSdk) {
       root.RtsmunityPublicApiSdk = {};
     }
-    root.RtsmunityPublicApiSdk.StatisticsApi = factory(root.RtsmunityPublicApiSdk.ApiClient, root.RtsmunityPublicApiSdk.InlineResponse20014);
+    root.RtsmunityPublicApiSdk.StatisticsApi = factory(root.RtsmunityPublicApiSdk.ApiClient, root.RtsmunityPublicApiSdk.InlineResponse20016);
   }
-}(this, function(ApiClient, InlineResponse20014) {
+}(this, function(ApiClient, InlineResponse20016) {
   'use strict';
 
   /**
@@ -60,7 +60,7 @@
      * Callback function to receive the result of the getStatisticsStates operation.
      * @callback module:api/StatisticsApi~getStatisticsStatesCallback
      * @param {String} error Error message, if any.
-     * @param {Array.<module:model/InlineResponse20014>} data The data returned by the service call.
+     * @param {Array.<module:model/InlineResponse20016>} data The data returned by the service call.
      * @param {String} response The complete HTTP response.
      */
 
@@ -69,7 +69,7 @@
      * 
      * @param {String} sport Sport key
      * @param {module:api/StatisticsApi~getStatisticsStatesCallback} callback The callback function, accepting three arguments: error, data, response
-     * data is of type: {@link Array.<module:model/InlineResponse20014>}
+     * data is of type: {@link Array.<module:model/InlineResponse20016>}
      */
     this.getStatisticsStates = function(sport, callback) {
       var postBody = null;
@@ -93,7 +93,7 @@
       var authNames = [];
       var contentTypes = [];
       var accepts = [];
-      var returnType = [InlineResponse20014];
+      var returnType = [InlineResponse20016];
 
       return this.apiClient.callApi(
         '/{sport}/statistics/states', 'GET',

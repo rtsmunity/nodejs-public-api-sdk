@@ -77,6 +77,18 @@
       //expect(instance).to.be();
     });
 
+    it('should have the property lowerBound (base name: "lower_bound")', function() {
+      // uncomment below and update the code to test the property lowerBound
+      //var instane = new RtsmunityPublicApiSdk.InlineResponse2009();
+      //expect(instance).to.be();
+    });
+
+    it('should have the property upperBound (base name: "upper_bound")', function() {
+      // uncomment below and update the code to test the property upperBound
+      //var instane = new RtsmunityPublicApiSdk.InlineResponse2009();
+      //expect(instance).to.be();
+    });
+
   });
 
 }));

@@ -66,6 +66,7 @@
 
 
 
+
   };
 
   /**
@@ -105,6 +106,9 @@
       }
       if (data.hasOwnProperty('league_id')) {
         obj['league_id'] = ApiClient.convertToType(data['league_id'], 'Number');
+      }
+      if (data.hasOwnProperty('win_team_id')) {
+        obj['win_team_id'] = ApiClient.convertToType(data['win_team_id'], 'Number');
       }
       if (data.hasOwnProperty('match_state_id')) {
         obj['match_state_id'] = ApiClient.convertToType(data['match_state_id'], 'Number');
@@ -149,6 +153,10 @@
    * @member {Number} league_id
    */
   exports.prototype['league_id'] = undefined;
+  /**
+   * @member {Number} win_team_id
+   */
+  exports.prototype['win_team_id'] = undefined;
   /**
    * @member {Number} match_state_id
    */

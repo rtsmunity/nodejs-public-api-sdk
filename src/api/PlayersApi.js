@@ -25,18 +25,18 @@
 (function(root, factory) {
   if (typeof define === 'function' && define.amd) {
     // AMD. Register as an anonymous module.
-    define(['ApiClient', 'model/InlineResponse20012'], factory);
+    define(['ApiClient', 'model/InlineResponse20014'], factory);
   } else if (typeof module === 'object' && module.exports) {
     // CommonJS-like environments that support module.exports, like Node.
-    module.exports = factory(require('../ApiClient'), require('../model/InlineResponse20012'));
+    module.exports = factory(require('../ApiClient'), require('../model/InlineResponse20014'));
   } else {
     // Browser globals (root is window)
     if (!root.RtsmunityPublicApiSdk) {
       root.RtsmunityPublicApiSdk = {};
     }
-    root.RtsmunityPublicApiSdk.PlayersApi = factory(root.RtsmunityPublicApiSdk.ApiClient, root.RtsmunityPublicApiSdk.InlineResponse20012);
+    root.RtsmunityPublicApiSdk.PlayersApi = factory(root.RtsmunityPublicApiSdk.ApiClient, root.RtsmunityPublicApiSdk.InlineResponse20014);
   }
-}(this, function(ApiClient, InlineResponse20012) {
+}(this, function(ApiClient, InlineResponse20014) {
   'use strict';
 
   /**
@@ -60,7 +60,7 @@
      * Callback function to receive the result of the getPlayers operation.
      * @callback module:api/PlayersApi~getPlayersCallback
      * @param {String} error Error message, if any.
-     * @param {Array.<module:model/InlineResponse20012>} data The data returned by the service call.
+     * @param {Array.<module:model/InlineResponse20014>} data The data returned by the service call.
      * @param {String} response The complete HTTP response.
      */
 
@@ -71,7 +71,7 @@
      * @param {Object} opts Optional parameters
      * @param {Number} opts.teamId Filter players by team id
      * @param {module:api/PlayersApi~getPlayersCallback} callback The callback function, accepting three arguments: error, data, response
-     * data is of type: {@link Array.<module:model/InlineResponse20012>}
+     * data is of type: {@link Array.<module:model/InlineResponse20014>}
      */
     this.getPlayers = function(sport, opts, callback) {
       opts = opts || {};
@@ -97,7 +97,7 @@
       var authNames = [];
       var contentTypes = [];
       var accepts = ['application/json; charset=utf-8'];
-      var returnType = [InlineResponse20012];
+      var returnType = [InlineResponse20014];
 
       return this.apiClient.callApi(
         '/{sport}/players', 'GET',

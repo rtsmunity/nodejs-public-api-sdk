@@ -58,9 +58,6 @@
 
 
 
-
-
-
   };
 
   /**
@@ -77,17 +74,8 @@
       if (data.hasOwnProperty('id')) {
         obj['id'] = ApiClient.convertToType(data['id'], 'Number');
       }
-      if (data.hasOwnProperty('team_id')) {
-        obj['team_id'] = ApiClient.convertToType(data['team_id'], 'Number');
-      }
-      if (data.hasOwnProperty('first_name')) {
-        obj['first_name'] = ApiClient.convertToType(data['first_name'], 'String');
-      }
-      if (data.hasOwnProperty('last_name')) {
-        obj['last_name'] = ApiClient.convertToType(data['last_name'], 'String');
-      }
-      if (data.hasOwnProperty('nickname')) {
-        obj['nickname'] = ApiClient.convertToType(data['nickname'], 'String');
+      if (data.hasOwnProperty('name')) {
+        obj['name'] = ApiClient.convertToType(data['name'], 'String');
       }
     }
     return obj;
@@ -98,21 +86,9 @@
    */
   exports.prototype['id'] = undefined;
   /**
-   * @member {Number} team_id
+   * @member {String} name
    */
-  exports.prototype['team_id'] = undefined;
-  /**
-   * @member {String} first_name
-   */
-  exports.prototype['first_name'] = undefined;
-  /**
-   * @member {String} last_name
-   */
-  exports.prototype['last_name'] = undefined;
-  /**
-   * @member {String} nickname
-   */
-  exports.prototype['nickname'] = undefined;
+  exports.prototype['name'] = undefined;
 
 
 

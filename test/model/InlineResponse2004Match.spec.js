@@ -119,6 +119,12 @@
       //expect(instance).to.be();
     });
 
+    it('should have the property winTeamId (base name: "win_team_id")', function() {
+      // uncomment below and update the code to test the property winTeamId
+      //var instane = new RtsmunityPublicApiSdk.InlineResponse2004Match();
+      //expect(instance).to.be();
+    });
+
     it('should have the property matchStateId (base name: "match_state_id")', function() {
       // uncomment below and update the code to test the property matchStateId
       //var instane = new RtsmunityPublicApiSdk.InlineResponse2004Match();

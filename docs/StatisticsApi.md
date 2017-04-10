@@ -9,7 +9,7 @@ Method | HTTP request | Description
 
 <a name="getStatisticsStates"></a>
 # **getStatisticsStates**
-> [InlineResponse20014] getStatisticsStates(sport)
+> [InlineResponse20016] getStatisticsStates(sport)
 
 List All Statistics states
 
@@ -42,7 +42,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**[InlineResponse20014]**](InlineResponse20014.md)
+[**[InlineResponse20016]**](InlineResponse20016.md)
 
 ### Authorization
 

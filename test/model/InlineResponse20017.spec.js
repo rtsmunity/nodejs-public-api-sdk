@@ -77,38 +77,8 @@
       //expect(instance).to.be();
     });
 
-    it('should have the property shortcut (base name: "shortcut")', function() {
-      // uncomment below and update the code to test the property shortcut
-      //var instane = new RtsmunityPublicApiSdk.InlineResponse20017();
-      //expect(instance).to.be();
-    });
-
-    it('should have the property description (base name: "description")', function() {
-      // uncomment below and update the code to test the property description
-      //var instane = new RtsmunityPublicApiSdk.InlineResponse20017();
-      //expect(instance).to.be();
-    });
-
-    it('should have the property dateFrom (base name: "date_from")', function() {
-      // uncomment below and update the code to test the property dateFrom
-      //var instane = new RtsmunityPublicApiSdk.InlineResponse20017();
-      //expect(instance).to.be();
-    });
-
-    it('should have the property dateTo (base name: "date_to")', function() {
-      // uncomment below and update the code to test the property dateTo
-      //var instane = new RtsmunityPublicApiSdk.InlineResponse20017();
-      //expect(instance).to.be();
-    });
-
-    it('should have the property leagueId (base name: "league_id")', function() {
-      // uncomment below and update the code to test the property leagueId
-      //var instane = new RtsmunityPublicApiSdk.InlineResponse20017();
-      //expect(instance).to.be();
-    });
-
-    it('should have the property teams (base name: "teams")', function() {
-      // uncomment below and update the code to test the property teams
+    it('should have the property numberOfMatches (base name: "number_of_matches")', function() {
+      // uncomment below and update the code to test the property numberOfMatches
       //var instane = new RtsmunityPublicApiSdk.InlineResponse20017();
       //expect(instance).to.be();
     });

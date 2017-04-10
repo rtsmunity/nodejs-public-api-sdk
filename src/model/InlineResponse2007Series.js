@@ -63,6 +63,7 @@
 
 
 
+
   };
 
   /**
@@ -93,6 +94,9 @@
       }
       if (data.hasOwnProperty('planned_start')) {
         obj['planned_start'] = ApiClient.convertToType(data['planned_start'], 'String');
+      }
+      if (data.hasOwnProperty('win_team_id')) {
+        obj['win_team_id'] = ApiClient.convertToType(data['win_team_id'], 'Number');
       }
       if (data.hasOwnProperty('tournament_id')) {
         obj['tournament_id'] = ApiClient.convertToType(data['tournament_id'], 'Number');
@@ -125,6 +129,10 @@
    * @member {String} planned_start
    */
   exports.prototype['planned_start'] = undefined;
+  /**
+   * @member {Number} win_team_id
+   */
+  exports.prototype['win_team_id'] = undefined;
   /**
    * @member {Number} tournament_id
    */

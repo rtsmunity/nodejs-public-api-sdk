@@ -9,7 +9,7 @@ Method | HTTP request | Description
 
 <a name="getTeams"></a>
 # **getTeams**
-> [InlineResponse20016] getTeams(sport)
+> [InlineResponse20018] getTeams(sport)
 
 List All Teams
 
@@ -42,7 +42,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**[InlineResponse20016]**](InlineResponse20016.md)
+[**[InlineResponse20018]**](InlineResponse20018.md)
 
 ### Authorization
 

@@ -59,7 +59,6 @@
 
 
 
-
   };
 
   /**
@@ -82,9 +81,6 @@
       if (data.hasOwnProperty('description')) {
         obj['description'] = ApiClient.convertToType(data['description'], 'String');
       }
-      if (data.hasOwnProperty('selections')) {
-        obj['selections'] = ApiClient.convertToType(data['selections'], ['Number']);
-      }
     }
     return obj;
   }
@@ -101,10 +97,6 @@
    * @member {String} description
    */
   exports.prototype['description'] = undefined;
-  /**
-   * @member {Array.<Number>} selections
-   */
-  exports.prototype['selections'] = undefined;
 
 
 

@@ -71,20 +71,8 @@
       //expect(instance).to.be();
     });
 
-    it('should have the property name (base name: "name")', function() {
-      // uncomment below and update the code to test the property name
-      //var instane = new RtsmunityPublicApiSdk.InlineResponse20016();
-      //expect(instance).to.be();
-    });
-
-    it('should have the property shortcut (base name: "shortcut")', function() {
-      // uncomment below and update the code to test the property shortcut
-      //var instane = new RtsmunityPublicApiSdk.InlineResponse20016();
-      //expect(instance).to.be();
-    });
-
-    it('should have the property players (base name: "players")', function() {
-      // uncomment below and update the code to test the property players
+    it('should have the property state (base name: "state")', function() {
+      // uncomment below and update the code to test the property state
       //var instane = new RtsmunityPublicApiSdk.InlineResponse20016();
       //expect(instance).to.be();
     });

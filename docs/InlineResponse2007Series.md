@@ -9,6 +9,7 @@ Name | Type | Description | Notes
 **seriesStateId** | **Number** |  | [optional] 
 **id** | **Number** |  | [optional] 
 **plannedStart** | **String** |  | [optional] 
+**winTeamId** | **Number** |  | [optional] 
 **tournamentId** | **Number** |  | [optional] 
 
 

@@ -64,8 +64,6 @@
 
 
 
-
-
   };
 
   /**
@@ -82,32 +80,26 @@
       if (data.hasOwnProperty('id')) {
         obj['id'] = ApiClient.convertToType(data['id'], 'Number');
       }
-      if (data.hasOwnProperty('series_match_sequence')) {
-        obj['series_match_sequence'] = ApiClient.convertToType(data['series_match_sequence'], 'Number');
+      if (data.hasOwnProperty('name')) {
+        obj['name'] = ApiClient.convertToType(data['name'], 'String');
       }
-      if (data.hasOwnProperty('start_date')) {
-        obj['start_date'] = ApiClient.convertToType(data['start_date'], 'String');
+      if (data.hasOwnProperty('description')) {
+        obj['description'] = ApiClient.convertToType(data['description'], 'String');
       }
-      if (data.hasOwnProperty('end_date')) {
-        obj['end_date'] = ApiClient.convertToType(data['end_date'], 'String');
+      if (data.hasOwnProperty('market_close_time_id')) {
+        obj['market_close_time_id'] = ApiClient.convertToType(data['market_close_time_id'], 'Number');
       }
-      if (data.hasOwnProperty('dark_team_id')) {
-        obj['dark_team_id'] = ApiClient.convertToType(data['dark_team_id'], 'Number');
+      if (data.hasOwnProperty('market_resolve_time_id')) {
+        obj['market_resolve_time_id'] = ApiClient.convertToType(data['market_resolve_time_id'], 'Number');
       }
-      if (data.hasOwnProperty('light_team_id')) {
-        obj['light_team_id'] = ApiClient.convertToType(data['light_team_id'], 'Number');
+      if (data.hasOwnProperty('match_position_id')) {
+        obj['match_position_id'] = ApiClient.convertToType(data['match_position_id'], 'Number');
       }
-      if (data.hasOwnProperty('series_id')) {
-        obj['series_id'] = ApiClient.convertToType(data['series_id'], 'Number');
+      if (data.hasOwnProperty('home_team')) {
+        obj['home_team'] = ApiClient.convertToType(data['home_team'], 'Boolean');
       }
-      if (data.hasOwnProperty('tournament_id')) {
-        obj['tournament_id'] = ApiClient.convertToType(data['tournament_id'], 'Number');
-      }
-      if (data.hasOwnProperty('league_id')) {
-        obj['league_id'] = ApiClient.convertToType(data['league_id'], 'Number');
-      }
-      if (data.hasOwnProperty('win_team_id')) {
-        obj['win_team_id'] = ApiClient.convertToType(data['win_team_id'], 'Number');
+      if (data.hasOwnProperty('selections')) {
+        obj['selections'] = ApiClient.convertToType(data['selections'], ['Number']);
       }
     }
     return obj;
@@ -118,41 +110,33 @@
    */
   exports.prototype['id'] = undefined;
   /**
-   * @member {Number} series_match_sequence
+   * @member {String} name
    */
-  exports.prototype['series_match_sequence'] = undefined;
+  exports.prototype['name'] = undefined;
   /**
-   * @member {String} start_date
+   * @member {String} description
    */
-  exports.prototype['start_date'] = undefined;
+  exports.prototype['description'] = undefined;
   /**
-   * @member {String} end_date
+   * @member {Number} market_close_time_id
    */
-  exports.prototype['end_date'] = undefined;
+  exports.prototype['market_close_time_id'] = undefined;
   /**
-   * @member {Number} dark_team_id
+   * @member {Number} market_resolve_time_id
    */
-  exports.prototype['dark_team_id'] = undefined;
+  exports.prototype['market_resolve_time_id'] = undefined;
   /**
-   * @member {Number} light_team_id
+   * @member {Number} match_position_id
    */
-  exports.prototype['light_team_id'] = undefined;
+  exports.prototype['match_position_id'] = undefined;
   /**
-   * @member {Number} series_id
+   * @member {Boolean} home_team
    */
-  exports.prototype['series_id'] = undefined;
+  exports.prototype['home_team'] = undefined;
   /**
-   * @member {Number} tournament_id
+   * @member {Array.<Number>} selections
    */
-  exports.prototype['tournament_id'] = undefined;
-  /**
-   * @member {Number} league_id
-   */
-  exports.prototype['league_id'] = undefined;
-  /**
-   * @member {Number} win_team_id
-   */
-  exports.prototype['win_team_id'] = undefined;
+  exports.prototype['selections'] = undefined;
 
 
 

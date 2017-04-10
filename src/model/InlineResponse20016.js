@@ -58,8 +58,6 @@
 
 
 
-
-
   };
 
   /**
@@ -76,14 +74,8 @@
       if (data.hasOwnProperty('id')) {
         obj['id'] = ApiClient.convertToType(data['id'], 'Number');
       }
-      if (data.hasOwnProperty('name')) {
-        obj['name'] = ApiClient.convertToType(data['name'], 'String');
-      }
-      if (data.hasOwnProperty('shortcut')) {
-        obj['shortcut'] = ApiClient.convertToType(data['shortcut'], 'String');
-      }
-      if (data.hasOwnProperty('players')) {
-        obj['players'] = ApiClient.convertToType(data['players'], ['Number']);
+      if (data.hasOwnProperty('state')) {
+        obj['state'] = ApiClient.convertToType(data['state'], 'String');
       }
     }
     return obj;
@@ -94,17 +86,9 @@
    */
   exports.prototype['id'] = undefined;
   /**
-   * @member {String} name
+   * @member {String} state
    */
-  exports.prototype['name'] = undefined;
-  /**
-   * @member {String} shortcut
-   */
-  exports.prototype['shortcut'] = undefined;
-  /**
-   * @member {Array.<Number>} players
-   */
-  exports.prototype['players'] = undefined;
+  exports.prototype['state'] = undefined;
 
 
 

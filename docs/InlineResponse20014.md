@@ -4,6 +4,9 @@
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **id** | **Number** |  | [optional] 
-**state** | **String** |  | [optional] 
+**teamId** | **Number** |  | [optional] 
+**firstName** | **String** |  | [optional] 
+**lastName** | **String** |  | [optional] 
+**nickname** | **String** |  | [optional] 
 
 

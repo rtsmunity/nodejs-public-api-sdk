@@ -71,44 +71,56 @@
       //expect(instance).to.be();
     });
 
-    it('should have the property homeTeamId (base name: "home_team_id")', function() {
-      // uncomment below and update the code to test the property homeTeamId
+    it('should have the property seriesMatchSequence (base name: "series_match_sequence")', function() {
+      // uncomment below and update the code to test the property seriesMatchSequence
       //var instane = new RtsmunityPublicApiSdk.InlineResponse20013();
       //expect(instance).to.be();
     });
 
-    it('should have the property awayTeamId (base name: "away_team_id")', function() {
-      // uncomment below and update the code to test the property awayTeamId
+    it('should have the property startDate (base name: "start_date")', function() {
+      // uncomment below and update the code to test the property startDate
       //var instane = new RtsmunityPublicApiSdk.InlineResponse20013();
       //expect(instance).to.be();
     });
 
-    it('should have the property seriesTypeId (base name: "series_type_id")', function() {
-      // uncomment below and update the code to test the property seriesTypeId
+    it('should have the property endDate (base name: "end_date")', function() {
+      // uncomment below and update the code to test the property endDate
       //var instane = new RtsmunityPublicApiSdk.InlineResponse20013();
       //expect(instance).to.be();
     });
 
-    it('should have the property seriesStateId (base name: "series_state_id")', function() {
-      // uncomment below and update the code to test the property seriesStateId
+    it('should have the property darkTeamId (base name: "dark_team_id")', function() {
+      // uncomment below and update the code to test the property darkTeamId
       //var instane = new RtsmunityPublicApiSdk.InlineResponse20013();
       //expect(instance).to.be();
     });
 
-    it('should have the property plannedStart (base name: "planned_start")', function() {
-      // uncomment below and update the code to test the property plannedStart
+    it('should have the property lightTeamId (base name: "light_team_id")', function() {
+      // uncomment below and update the code to test the property lightTeamId
       //var instane = new RtsmunityPublicApiSdk.InlineResponse20013();
       //expect(instance).to.be();
     });
 
-    it('should have the property winTeamId (base name: "win_team_id")', function() {
-      // uncomment below and update the code to test the property winTeamId
+    it('should have the property seriesId (base name: "series_id")', function() {
+      // uncomment below and update the code to test the property seriesId
       //var instane = new RtsmunityPublicApiSdk.InlineResponse20013();
       //expect(instance).to.be();
     });
 
     it('should have the property tournamentId (base name: "tournament_id")', function() {
       // uncomment below and update the code to test the property tournamentId
+      //var instane = new RtsmunityPublicApiSdk.InlineResponse20013();
+      //expect(instance).to.be();
+    });
+
+    it('should have the property leagueId (base name: "league_id")', function() {
+      // uncomment below and update the code to test the property leagueId
+      //var instane = new RtsmunityPublicApiSdk.InlineResponse20013();
+      //expect(instance).to.be();
+    });
+
+    it('should have the property winTeamId (base name: "win_team_id")', function() {
+      // uncomment below and update the code to test the property winTeamId
       //var instane = new RtsmunityPublicApiSdk.InlineResponse20013();
       //expect(instance).to.be();
     });

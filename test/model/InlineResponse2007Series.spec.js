@@ -101,6 +101,12 @@
       //expect(instance).to.be();
     });
 
+    it('should have the property winTeamId (base name: "win_team_id")', function() {
+      // uncomment below and update the code to test the property winTeamId
+      //var instane = new RtsmunityPublicApiSdk.InlineResponse2007Series();
+      //expect(instance).to.be();
+    });
+
     it('should have the property tournamentId (base name: "tournament_id")', function() {
       // uncomment below and update the code to test the property tournamentId
       //var instane = new RtsmunityPublicApiSdk.InlineResponse2007Series();

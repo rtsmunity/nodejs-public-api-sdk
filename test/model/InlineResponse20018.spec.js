@@ -39,7 +39,7 @@
   var instance;
 
   beforeEach(function() {
-    instance = new RtsmunityPublicApiSdk.InlineResponse20011();
+    instance = new RtsmunityPublicApiSdk.InlineResponse20018();
   });
 
   var getProperty = function(object, getter, property) {
@@ -58,58 +58,34 @@
       object[property] = value;
   }
 
-  describe('InlineResponse20011', function() {
-    it('should create an instance of InlineResponse20011', function() {
-      // uncomment below and update the code to test InlineResponse20011
-      //var instane = new RtsmunityPublicApiSdk.InlineResponse20011();
-      //expect(instance).to.be.a(RtsmunityPublicApiSdk.InlineResponse20011);
+  describe('InlineResponse20018', function() {
+    it('should create an instance of InlineResponse20018', function() {
+      // uncomment below and update the code to test InlineResponse20018
+      //var instane = new RtsmunityPublicApiSdk.InlineResponse20018();
+      //expect(instance).to.be.a(RtsmunityPublicApiSdk.InlineResponse20018);
     });
 
     it('should have the property id (base name: "id")', function() {
       // uncomment below and update the code to test the property id
-      //var instane = new RtsmunityPublicApiSdk.InlineResponse20011();
+      //var instane = new RtsmunityPublicApiSdk.InlineResponse20018();
       //expect(instance).to.be();
     });
 
     it('should have the property name (base name: "name")', function() {
       // uncomment below and update the code to test the property name
-      //var instane = new RtsmunityPublicApiSdk.InlineResponse20011();
+      //var instane = new RtsmunityPublicApiSdk.InlineResponse20018();
       //expect(instance).to.be();
     });
 
-    it('should have the property description (base name: "description")', function() {
-      // uncomment below and update the code to test the property description
-      //var instane = new RtsmunityPublicApiSdk.InlineResponse20011();
+    it('should have the property shortcut (base name: "shortcut")', function() {
+      // uncomment below and update the code to test the property shortcut
+      //var instane = new RtsmunityPublicApiSdk.InlineResponse20018();
       //expect(instance).to.be();
     });
 
-    it('should have the property marketCloseTimeId (base name: "market_close_time_id")', function() {
-      // uncomment below and update the code to test the property marketCloseTimeId
-      //var instane = new RtsmunityPublicApiSdk.InlineResponse20011();
-      //expect(instance).to.be();
-    });
-
-    it('should have the property marketResolveTimeId (base name: "market_resolve_time_id")', function() {
-      // uncomment below and update the code to test the property marketResolveTimeId
-      //var instane = new RtsmunityPublicApiSdk.InlineResponse20011();
-      //expect(instance).to.be();
-    });
-
-    it('should have the property matchPositionId (base name: "match_position_id")', function() {
-      // uncomment below and update the code to test the property matchPositionId
-      //var instane = new RtsmunityPublicApiSdk.InlineResponse20011();
-      //expect(instance).to.be();
-    });
-
-    it('should have the property homeTeam (base name: "home_team")', function() {
-      // uncomment below and update the code to test the property homeTeam
-      //var instane = new RtsmunityPublicApiSdk.InlineResponse20011();
-      //expect(instance).to.be();
-    });
-
-    it('should have the property selections (base name: "selections")', function() {
-      // uncomment below and update the code to test the property selections
-      //var instane = new RtsmunityPublicApiSdk.InlineResponse20011();
+    it('should have the property players (base name: "players")', function() {
+      // uncomment below and update the code to test the property players
+      //var instane = new RtsmunityPublicApiSdk.InlineResponse20018();
       //expect(instance).to.be();
     });
 

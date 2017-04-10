@@ -77,6 +77,12 @@
       //expect(instance).to.be();
     });
 
+    it('should have the property result (base name: "result")', function() {
+      // uncomment below and update the code to test the property result
+      //var instane = new RtsmunityPublicApiSdk.InlineResponse2003Markets();
+      //expect(instance).to.be();
+    });
+
     it('should have the property winSelections (base name: "win_selections")', function() {
       // uncomment below and update the code to test the property winSelections
       //var instane = new RtsmunityPublicApiSdk.InlineResponse2003Markets();

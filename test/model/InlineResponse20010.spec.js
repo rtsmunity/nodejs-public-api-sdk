@@ -83,12 +83,6 @@
       //expect(instance).to.be();
     });
 
-    it('should have the property selections (base name: "selections")', function() {
-      // uncomment below and update the code to test the property selections
-      //var instane = new RtsmunityPublicApiSdk.InlineResponse20010();
-      //expect(instance).to.be();
-    });
-
   });
 
 }));

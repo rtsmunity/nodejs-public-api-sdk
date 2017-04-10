@@ -59,6 +59,11 @@
 
 
 
+
+
+
+
+
   };
 
   /**
@@ -75,11 +80,26 @@
       if (data.hasOwnProperty('id')) {
         obj['id'] = ApiClient.convertToType(data['id'], 'Number');
       }
-      if (data.hasOwnProperty('name')) {
-        obj['name'] = ApiClient.convertToType(data['name'], 'String');
+      if (data.hasOwnProperty('home_team_id')) {
+        obj['home_team_id'] = ApiClient.convertToType(data['home_team_id'], 'Number');
       }
-      if (data.hasOwnProperty('number_of_matches')) {
-        obj['number_of_matches'] = ApiClient.convertToType(data['number_of_matches'], 'Number');
+      if (data.hasOwnProperty('away_team_id')) {
+        obj['away_team_id'] = ApiClient.convertToType(data['away_team_id'], 'Number');
+      }
+      if (data.hasOwnProperty('series_type_id')) {
+        obj['series_type_id'] = ApiClient.convertToType(data['series_type_id'], 'Number');
+      }
+      if (data.hasOwnProperty('series_state_id')) {
+        obj['series_state_id'] = ApiClient.convertToType(data['series_state_id'], 'Number');
+      }
+      if (data.hasOwnProperty('planned_start')) {
+        obj['planned_start'] = ApiClient.convertToType(data['planned_start'], 'String');
+      }
+      if (data.hasOwnProperty('win_team_id')) {
+        obj['win_team_id'] = ApiClient.convertToType(data['win_team_id'], 'Number');
+      }
+      if (data.hasOwnProperty('tournament_id')) {
+        obj['tournament_id'] = ApiClient.convertToType(data['tournament_id'], 'Number');
       }
     }
     return obj;
@@ -90,13 +110,33 @@
    */
   exports.prototype['id'] = undefined;
   /**
-   * @member {String} name
+   * @member {Number} home_team_id
    */
-  exports.prototype['name'] = undefined;
+  exports.prototype['home_team_id'] = undefined;
   /**
-   * @member {Number} number_of_matches
+   * @member {Number} away_team_id
    */
-  exports.prototype['number_of_matches'] = undefined;
+  exports.prototype['away_team_id'] = undefined;
+  /**
+   * @member {Number} series_type_id
+   */
+  exports.prototype['series_type_id'] = undefined;
+  /**
+   * @member {Number} series_state_id
+   */
+  exports.prototype['series_state_id'] = undefined;
+  /**
+   * @member {String} planned_start
+   */
+  exports.prototype['planned_start'] = undefined;
+  /**
+   * @member {Number} win_team_id
+   */
+  exports.prototype['win_team_id'] = undefined;
+  /**
+   * @member {Number} tournament_id
+   */
+  exports.prototype['tournament_id'] = undefined;
 
 
 

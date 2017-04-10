@@ -25,18 +25,18 @@
 (function(root, factory) {
   if (typeof define === 'function' && define.amd) {
     // AMD. Register as an anonymous module.
-    define(['ApiClient', 'model/InlineResponse2009', 'model/InlineResponse20011'], factory);
+    define(['ApiClient', 'model/InlineResponse20012', 'model/InlineResponse20010', 'model/InlineResponse20013'], factory);
   } else if (typeof module === 'object' && module.exports) {
     // CommonJS-like environments that support module.exports, like Node.
-    module.exports = factory(require('../ApiClient'), require('../model/InlineResponse2009'), require('../model/InlineResponse20011'));
+    module.exports = factory(require('../ApiClient'), require('../model/InlineResponse20012'), require('../model/InlineResponse20010'), require('../model/InlineResponse20013'));
   } else {
     // Browser globals (root is window)
     if (!root.RtsmunityPublicApiSdk) {
       root.RtsmunityPublicApiSdk = {};
     }
-    root.RtsmunityPublicApiSdk.MatchesApi = factory(root.RtsmunityPublicApiSdk.ApiClient, root.RtsmunityPublicApiSdk.InlineResponse2009, root.RtsmunityPublicApiSdk.InlineResponse20011);
+    root.RtsmunityPublicApiSdk.MatchesApi = factory(root.RtsmunityPublicApiSdk.ApiClient, root.RtsmunityPublicApiSdk.InlineResponse20012, root.RtsmunityPublicApiSdk.InlineResponse20010, root.RtsmunityPublicApiSdk.InlineResponse20013);
   }
-}(this, function(ApiClient, InlineResponse2009, InlineResponse20011) {
+}(this, function(ApiClient, InlineResponse20012, InlineResponse20010, InlineResponse20013) {
   'use strict';
 
   /**
@@ -60,7 +60,7 @@
      * Callback function to receive the result of the getMatchPositions operation.
      * @callback module:api/MatchesApi~getMatchPositionsCallback
      * @param {String} error Error message, if any.
-     * @param {Array.<module:model/InlineResponse2009>} data The data returned by the service call.
+     * @param {Array.<module:model/InlineResponse20012>} data The data returned by the service call.
      * @param {String} response The complete HTTP response.
      */
 
@@ -69,7 +69,7 @@
      * 
      * @param {String} sport Sport key
      * @param {module:api/MatchesApi~getMatchPositionsCallback} callback The callback function, accepting three arguments: error, data, response
-     * data is of type: {@link Array.<module:model/InlineResponse2009>}
+     * data is of type: {@link Array.<module:model/InlineResponse20012>}
      */
     this.getMatchPositions = function(sport, callback) {
       var postBody = null;
@@ -93,7 +93,7 @@
       var authNames = [];
       var contentTypes = [];
       var accepts = ['application/json; charset=utf-8'];
-      var returnType = [InlineResponse2009];
+      var returnType = [InlineResponse20012];
 
       return this.apiClient.callApi(
         '/{sport}/match/positions', 'GET',
@@ -106,7 +106,7 @@
      * Callback function to receive the result of the getMatchStates operation.
      * @callback module:api/MatchesApi~getMatchStatesCallback
      * @param {String} error Error message, if any.
-     * @param {Array.<module:model/InlineResponse2009>} data The data returned by the service call.
+     * @param {Array.<module:model/InlineResponse20010>} data The data returned by the service call.
      * @param {String} response The complete HTTP response.
      */
 
@@ -115,7 +115,7 @@
      * 
      * @param {String} sport Sport key
      * @param {module:api/MatchesApi~getMatchStatesCallback} callback The callback function, accepting three arguments: error, data, response
-     * data is of type: {@link Array.<module:model/InlineResponse2009>}
+     * data is of type: {@link Array.<module:model/InlineResponse20010>}
      */
     this.getMatchStates = function(sport, callback) {
       var postBody = null;
@@ -139,7 +139,7 @@
       var authNames = [];
       var contentTypes = [];
       var accepts = ['application/json; charset=utf-8'];
-      var returnType = [InlineResponse2009];
+      var returnType = [InlineResponse20010];
 
       return this.apiClient.callApi(
         '/{sport}/match/states', 'GET',
@@ -152,7 +152,7 @@
      * Callback function to receive the result of the getMatches operation.
      * @callback module:api/MatchesApi~getMatchesCallback
      * @param {String} error Error message, if any.
-     * @param {Array.<module:model/InlineResponse20011>} data The data returned by the service call.
+     * @param {Array.<module:model/InlineResponse20013>} data The data returned by the service call.
      * @param {String} response The complete HTTP response.
      */
 
@@ -165,7 +165,7 @@
      * @param {Number} opts.leagueId ID of the league in the form of an integer
      * @param {Number} opts.seriesId ID of the series in the form of an integer
      * @param {module:api/MatchesApi~getMatchesCallback} callback The callback function, accepting three arguments: error, data, response
-     * data is of type: {@link Array.<module:model/InlineResponse20011>}
+     * data is of type: {@link Array.<module:model/InlineResponse20013>}
      */
     this.getMatches = function(sport, opts, callback) {
       opts = opts || {};
@@ -193,7 +193,7 @@
       var authNames = [];
       var contentTypes = [];
       var accepts = ['application/json; charset=utf-8'];
-      var returnType = [InlineResponse20011];
+      var returnType = [InlineResponse20013];
 
       return this.apiClient.callApi(
         '/{sport}/matches', 'GET',

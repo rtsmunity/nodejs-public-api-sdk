@@ -4,14 +4,12 @@
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **id** | **Number** |  | [optional] 
-**seriesMatchSequence** | **Number** |  | [optional] 
-**startDate** | **String** |  | [optional] 
-**endDate** | **String** |  | [optional] 
-**darkTeamId** | **Number** |  | [optional] 
-**lightTeamId** | **Number** |  | [optional] 
-**seriesId** | **Number** |  | [optional] 
-**tournamentId** | **Number** |  | [optional] 
-**leagueId** | **Number** |  | [optional] 
-**winTeamId** | **Number** |  | [optional] 
+**name** | **String** |  | [optional] 
+**description** | **String** |  | [optional] 
+**marketCloseTimeId** | **Number** |  | [optional] 
+**marketResolveTimeId** | **Number** |  | [optional] 
+**matchPositionId** | **Number** |  | [optional] 
+**homeTeam** | **Boolean** |  | [optional] 
+**selections** | **[Number]** |  | [optional] 
 
 

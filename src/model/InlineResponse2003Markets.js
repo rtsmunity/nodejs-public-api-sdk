@@ -60,6 +60,7 @@
 
 
 
+
   };
 
   /**
@@ -79,6 +80,9 @@
       if (data.hasOwnProperty('market_state_id')) {
         obj['market_state_id'] = ApiClient.convertToType(data['market_state_id'], 'Number');
       }
+      if (data.hasOwnProperty('result')) {
+        obj['result'] = ApiClient.convertToType(data['result'], 'String');
+      }
       if (data.hasOwnProperty('win_selections')) {
         obj['win_selections'] = ApiClient.convertToType(data['win_selections'], ['Number']);
       }
@@ -97,6 +101,10 @@
    * @member {Number} market_state_id
    */
   exports.prototype['market_state_id'] = undefined;
+  /**
+   * @member {String} result
+   */
+  exports.prototype['result'] = undefined;
   /**
    * @member {Array.<Number>} win_selections
    */

@@ -25,18 +25,18 @@
 (function(root, factory) {
   if (typeof define === 'function' && define.amd) {
     // AMD. Register as an anonymous module.
-    define(['ApiClient', 'model/InlineResponse20016'], factory);
+    define(['ApiClient', 'model/InlineResponse20018'], factory);
   } else if (typeof module === 'object' && module.exports) {
     // CommonJS-like environments that support module.exports, like Node.
-    module.exports = factory(require('../ApiClient'), require('../model/InlineResponse20016'));
+    module.exports = factory(require('../ApiClient'), require('../model/InlineResponse20018'));
   } else {
     // Browser globals (root is window)
     if (!root.RtsmunityPublicApiSdk) {
       root.RtsmunityPublicApiSdk = {};
     }
-    root.RtsmunityPublicApiSdk.TeamsApi = factory(root.RtsmunityPublicApiSdk.ApiClient, root.RtsmunityPublicApiSdk.InlineResponse20016);
+    root.RtsmunityPublicApiSdk.TeamsApi = factory(root.RtsmunityPublicApiSdk.ApiClient, root.RtsmunityPublicApiSdk.InlineResponse20018);
   }
-}(this, function(ApiClient, InlineResponse20016) {
+}(this, function(ApiClient, InlineResponse20018) {
   'use strict';
 
   /**
@@ -60,7 +60,7 @@
      * Callback function to receive the result of the getTeams operation.
      * @callback module:api/TeamsApi~getTeamsCallback
      * @param {String} error Error message, if any.
-     * @param {Array.<module:model/InlineResponse20016>} data The data returned by the service call.
+     * @param {Array.<module:model/InlineResponse20018>} data The data returned by the service call.
      * @param {String} response The complete HTTP response.
      */
 
@@ -69,7 +69,7 @@
      * 
      * @param {String} sport Sport key
      * @param {module:api/TeamsApi~getTeamsCallback} callback The callback function, accepting three arguments: error, data, response
-     * data is of type: {@link Array.<module:model/InlineResponse20016>}
+     * data is of type: {@link Array.<module:model/InlineResponse20018>}
      */
     this.getTeams = function(sport, callback) {
       var postBody = null;
@@ -93,7 +93,7 @@
       var authNames = [];
       var contentTypes = [];
       var accepts = ['application/json; charset=utf-8'];
-      var returnType = [InlineResponse20016];
+      var returnType = [InlineResponse20018];
 
       return this.apiClient.callApi(
         '/{sport}/teams', 'GET',

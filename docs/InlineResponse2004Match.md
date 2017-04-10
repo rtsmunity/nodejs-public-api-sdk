@@ -12,6 +12,7 @@ Name | Type | Description | Notes
 **seriesId** | **Number** |  | [optional] 
 **tournamentId** | **Number** |  | [optional] 
 **leagueId** | **Number** |  | [optional] 
+**winTeamId** | **Number** |  | [optional] 
 **matchStateId** | **Number** |  | [optional] 
 
 

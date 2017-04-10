@@ -151,7 +151,7 @@ No authorization required
 
 <a name="getMarketStates"></a>
 # **getMarketStates**
-> [InlineResponse2009] getMarketStates(sport)
+> [InlineResponse20010] getMarketStates(sport)
 
 List All Markets states
 
@@ -184,7 +184,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**[InlineResponse2009]**](InlineResponse2009.md)
+[**[InlineResponse20010]**](InlineResponse20010.md)
 
 ### Authorization
 
@@ -197,7 +197,7 @@ No authorization required
 
 <a name="getMarkets"></a>
 # **getMarkets**
-> [InlineResponse20010] getMarkets(sport)
+> [InlineResponse20011] getMarkets(sport)
 
 List All Markets
 
@@ -230,7 +230,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**[InlineResponse20010]**](InlineResponse20010.md)
+[**[InlineResponse20011]**](InlineResponse20011.md)
 
 ### Authorization
 

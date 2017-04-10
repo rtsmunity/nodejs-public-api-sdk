@@ -25,18 +25,18 @@
 (function(root, factory) {
   if (typeof define === 'function' && define.amd) {
     // AMD. Register as an anonymous module.
-    define(['ApiClient', 'model/InlineResponse20013', 'model/InlineResponse20014', 'model/InlineResponse20015'], factory);
+    define(['ApiClient', 'model/InlineResponse20015', 'model/InlineResponse20016', 'model/InlineResponse20017'], factory);
   } else if (typeof module === 'object' && module.exports) {
     // CommonJS-like environments that support module.exports, like Node.
-    module.exports = factory(require('../ApiClient'), require('../model/InlineResponse20013'), require('../model/InlineResponse20014'), require('../model/InlineResponse20015'));
+    module.exports = factory(require('../ApiClient'), require('../model/InlineResponse20015'), require('../model/InlineResponse20016'), require('../model/InlineResponse20017'));
   } else {
     // Browser globals (root is window)
     if (!root.RtsmunityPublicApiSdk) {
       root.RtsmunityPublicApiSdk = {};
     }
-    root.RtsmunityPublicApiSdk.SeriesApi = factory(root.RtsmunityPublicApiSdk.ApiClient, root.RtsmunityPublicApiSdk.InlineResponse20013, root.RtsmunityPublicApiSdk.InlineResponse20014, root.RtsmunityPublicApiSdk.InlineResponse20015);
+    root.RtsmunityPublicApiSdk.SeriesApi = factory(root.RtsmunityPublicApiSdk.ApiClient, root.RtsmunityPublicApiSdk.InlineResponse20015, root.RtsmunityPublicApiSdk.InlineResponse20016, root.RtsmunityPublicApiSdk.InlineResponse20017);
   }
-}(this, function(ApiClient, InlineResponse20013, InlineResponse20014, InlineResponse20015) {
+}(this, function(ApiClient, InlineResponse20015, InlineResponse20016, InlineResponse20017) {
   'use strict';
 
   /**
@@ -60,7 +60,7 @@
      * Callback function to receive the result of the getSeries operation.
      * @callback module:api/SeriesApi~getSeriesCallback
      * @param {String} error Error message, if any.
-     * @param {Array.<module:model/InlineResponse20013>} data The data returned by the service call.
+     * @param {Array.<module:model/InlineResponse20015>} data The data returned by the service call.
      * @param {String} response The complete HTTP response.
      */
 
@@ -71,7 +71,7 @@
      * @param {Object} opts Optional parameters
      * @param {Number} opts.tournamentId ID of the tournament in the form of an integer
      * @param {module:api/SeriesApi~getSeriesCallback} callback The callback function, accepting three arguments: error, data, response
-     * data is of type: {@link Array.<module:model/InlineResponse20013>}
+     * data is of type: {@link Array.<module:model/InlineResponse20015>}
      */
     this.getSeries = function(sport, opts, callback) {
       opts = opts || {};
@@ -97,7 +97,7 @@
       var authNames = [];
       var contentTypes = [];
       var accepts = ['application/json; charset=utf-8'];
-      var returnType = [InlineResponse20013];
+      var returnType = [InlineResponse20015];
 
       return this.apiClient.callApi(
         '/{sport}/series', 'GET',
@@ -110,7 +110,7 @@
      * Callback function to receive the result of the getSeriesState operation.
      * @callback module:api/SeriesApi~getSeriesStateCallback
      * @param {String} error Error message, if any.
-     * @param {module:model/InlineResponse20014} data The data returned by the service call.
+     * @param {module:model/InlineResponse20016} data The data returned by the service call.
      * @param {String} response The complete HTTP response.
      */
 
@@ -120,7 +120,7 @@
      * @param {Number} id ID of the state in the form of an integer
      * @param {String} sport Sport key
      * @param {module:api/SeriesApi~getSeriesStateCallback} callback The callback function, accepting three arguments: error, data, response
-     * data is of type: {@link module:model/InlineResponse20014}
+     * data is of type: {@link module:model/InlineResponse20016}
      */
     this.getSeriesState = function(id, sport, callback) {
       var postBody = null;
@@ -150,7 +150,7 @@
       var authNames = [];
       var contentTypes = [];
       var accepts = ['application/json; charset=utf-8'];
-      var returnType = InlineResponse20014;
+      var returnType = InlineResponse20016;
 
       return this.apiClient.callApi(
         '/{sport}/series/states/{id}', 'GET',
@@ -163,7 +163,7 @@
      * Callback function to receive the result of the getSeriesStates operation.
      * @callback module:api/SeriesApi~getSeriesStatesCallback
      * @param {String} error Error message, if any.
-     * @param {Array.<module:model/InlineResponse20014>} data The data returned by the service call.
+     * @param {Array.<module:model/InlineResponse20016>} data The data returned by the service call.
      * @param {String} response The complete HTTP response.
      */
 
@@ -172,7 +172,7 @@
      * 
      * @param {String} sport Sport key
      * @param {module:api/SeriesApi~getSeriesStatesCallback} callback The callback function, accepting three arguments: error, data, response
-     * data is of type: {@link Array.<module:model/InlineResponse20014>}
+     * data is of type: {@link Array.<module:model/InlineResponse20016>}
      */
     this.getSeriesStates = function(sport, callback) {
       var postBody = null;
@@ -196,7 +196,7 @@
       var authNames = [];
       var contentTypes = [];
       var accepts = ['application/json; charset=utf-8'];
-      var returnType = [InlineResponse20014];
+      var returnType = [InlineResponse20016];
 
       return this.apiClient.callApi(
         '/{sport}/series/states', 'GET',
@@ -209,7 +209,7 @@
      * Callback function to receive the result of the getSeriesTypes operation.
      * @callback module:api/SeriesApi~getSeriesTypesCallback
      * @param {String} error Error message, if any.
-     * @param {Array.<module:model/InlineResponse20015>} data The data returned by the service call.
+     * @param {Array.<module:model/InlineResponse20017>} data The data returned by the service call.
      * @param {String} response The complete HTTP response.
      */
 
@@ -218,7 +218,7 @@
      * 
      * @param {String} sport Sport key
      * @param {module:api/SeriesApi~getSeriesTypesCallback} callback The callback function, accepting three arguments: error, data, response
-     * data is of type: {@link Array.<module:model/InlineResponse20015>}
+     * data is of type: {@link Array.<module:model/InlineResponse20017>}
      */
     this.getSeriesTypes = function(sport, callback) {
       var postBody = null;
@@ -242,7 +242,7 @@
       var authNames = [];
       var contentTypes = [];
       var accepts = ['application/json; charset=utf-8'];
-      var returnType = [InlineResponse20015];
+      var returnType = [InlineResponse20017];
 
       return this.apiClient.callApi(
         '/{sport}/series/types', 'GET',

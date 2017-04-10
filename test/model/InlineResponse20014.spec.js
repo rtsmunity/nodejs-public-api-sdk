@@ -71,8 +71,26 @@
       //expect(instance).to.be();
     });
 
-    it('should have the property state (base name: "state")', function() {
-      // uncomment below and update the code to test the property state
+    it('should have the property teamId (base name: "team_id")', function() {
+      // uncomment below and update the code to test the property teamId
+      //var instane = new RtsmunityPublicApiSdk.InlineResponse20014();
+      //expect(instance).to.be();
+    });
+
+    it('should have the property firstName (base name: "first_name")', function() {
+      // uncomment below and update the code to test the property firstName
+      //var instane = new RtsmunityPublicApiSdk.InlineResponse20014();
+      //expect(instance).to.be();
+    });
+
+    it('should have the property lastName (base name: "last_name")', function() {
+      // uncomment below and update the code to test the property lastName
+      //var instane = new RtsmunityPublicApiSdk.InlineResponse20014();
+      //expect(instance).to.be();
+    });
+
+    it('should have the property nickname (base name: "nickname")', function() {
+      // uncomment below and update the code to test the property nickname
       //var instane = new RtsmunityPublicApiSdk.InlineResponse20014();
       //expect(instance).to.be();
     });
